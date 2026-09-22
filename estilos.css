@@ -1,0 +1,203 @@
+body {background-color: #111111;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0; 
+}
+
+h1 { color:f5d000;
+text-align: center
+}
+
+p { text-align: center} 
+
+a{ color: #f5d000;}  
+
+#cabecera { 
+
+display: flex; 
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px;
+
+} 
+
+#cabecera h1 { 
+    margin: 0;
+}
+
+#menu { 
+
+display: flex;
+list-style: none;
+gap: 30px;
+margin: 0; 
+padding: 0; 
+
+} 
+
+
+#menu a { 
+
+color: white;
+text-decoration: none;
+font-weight: bold;
+
+} 
+
+
+#menu a:hover { 
+
+    color: #f5d000;
+}
+
+#portada { 
+
+text-align: center;
+padding-top: 150px;
+}
+
+#portada h2 { 
+
+font-size: 45px;
+margin-bottom: 10px;
+
+}
+
+#portada p {
+    font-size: 18px;
+} 
+
+
+#pagina-tarifas { 
+
+text-align: center;
+padding: 60px 40px;
+
+} 
+
+
+#paginas-tarifas h2 { 
+
+font-size: 40px;
+margin-bottom: 10px;
+
+}
+
+.tarifas-contenedor { 
+
+display: flex;
+justify-content: center;
+gap: 30px;
+margin-top: 50px;
+
+}
+
+.tarifa { 
+
+ background-color: #1c1c1c;
+    width: 280px;
+    padding: 30px;
+    border: 1px solid #333333;
+    border-radius: 10px;
+
+} 
+
+.tarifa h3 { 
+
+color: #f5d000;
+font-weight: bold;
+
+}
+
+
+.precio{ 
+
+font-size: 35px;
+font-weight: bold;
+
+}
+
+.tarifa ul { 
+
+text-align: left;
+line-height: 2;
+
+}
+
+.boton {
+    display: inline-block;
+    background-color: #f5d000;
+    color: #111111;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+} 
+
+
+
+.boton:hover {
+    background-color: white;
+}
+
+
+
+.destacada {
+    border: 2px solid #f5d000;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
