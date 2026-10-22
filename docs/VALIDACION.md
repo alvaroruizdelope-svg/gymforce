@@ -43,3 +43,9 @@ No se ha alterado ningún archivo de imagen provisional. La carpeta `img/persona
 Recibida la fotografía identificada por el usuario como Álvaro, se ha preparado su fondo de gimnasio y se ha integrado la imagen optimizada en las tarjetas de Inicio y Entrenadores. Se comprobaron de nuevo las ocho páginas en nueve anchuras y las 16 revisiones axe, así como la carga del retrato vertical en ambos lugares, las otras dos etiquetas provisionales y las consultas de los tres perfiles. La restricción de `file://` continúa informada por separado.
 
 También se corrigió el destino de Alex conforme a la aclaración del usuario: su foto irá en el hero principal de Inicio y su variante móvil, no en THE TRAINING FLOOR. La foto de esa sección permanece intacta. Sofía, Deiby y Alex siguen pendientes de recepción. No se ha preparado un ZIP definitivo ni se ha publicado la integración parcial.
+
+## Integración parcial de Sofía
+
+La fotografía aportada como Sofía se ha editado para sustituir el fondo por un gimnasio y se ha integrado en Inicio y Entrenadores, conservando la camiseta y el logotipo del original como referencia de la edición. Se ha optimizado a WebP y se ha ajustado el encuadre superior para dejar visible la cabeza en las tarjetas.
+
+La revisión específica comprueba ambas páginas a 1440, 1024, 768, 390 y 320 píxeles (10 vistas), los dos retratos reales de Álvaro y Sofía, la única etiqueta provisional de Deiby, las rutas locales y la ausencia de desbordamientos y excepciones JavaScript. Se ejecutan cuatro auditorías axe en las vistas de escritorio y móvil. Quedan pendientes las fotos de Deiby y Alex; todavía no se prepara ni se publica la entrega definitiva.

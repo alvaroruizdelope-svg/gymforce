@@ -64,7 +64,7 @@ Esta revisión automática complementa las comprobaciones visuales; no sustituye
 
 ## Contenido de demostración
 
-No existe un gimnasio operativo detrás de esta web. Las instalaciones, horarios y ofertas son ficticios. Los perfiles se preparan para Álvaro, Sofía y Deiby, con especialidades y biografías provisionales de demostración; la fotografía de Álvaro es la aportada por el usuario con fondo editado y las imágenes provisionales de Sofía y Deiby no las representan. Las demás fotografías se han generado para el concepto; los esquemas musculares SVG son ilustrativos. Las fuentes se distribuyen con su licencia en `fonts/Barlow-Condensed-LICENSE.txt`.
+No existe un gimnasio operativo detrás de esta web. Las instalaciones, horarios y ofertas son ficticios. Los perfiles se preparan para Álvaro, Sofía y Deiby, con especialidades y biografías provisionales de demostración; las fotografías de Álvaro y Sofía son las aportadas por el usuario con fondos editados y la imagen provisional de Deiby no lo representa. Las demás fotografías se han generado para el concepto; los esquemas musculares SVG son ilustrativos. Las fuentes se distribuyen con su licencia en `fonts/Barlow-Condensed-LICENSE.txt`.
 
 El formulario no transmite datos, no hay pagos ni altas reales y no se utilizan cookies ni almacenamiento web. El alojamiento puede tener sus propios registros técnicos. Registro, acceso, reservas, área de socio y administración pertenecen a una fase posterior; consulta `docs/EVOLUCION.md`.
 
@@ -72,4 +72,4 @@ El formulario no transmite datos, no hay pagos ni altas reales y no se utilizan 
 
 Están preparados los tres perfiles de Álvaro, Sofía y Deiby en Inicio y Entrenadores, sus consultas y sus referencias en Clases. La ubicación ficticia del concepto es Avenida del Sur, Valdepeñas, Ciudad Real, España, sin número de portal ni sede operativa.
 
-La fotografía de Álvaro ya está integrada en Inicio y Entrenadores con su fondo editado y optimizada en WebP. Quedan por recibir Sofía, Deiby y Alex. Según la aclaración del usuario, Alex sustituirá al hombre del hero de la portada principal, no a THE TRAINING FLOOR. Los destinos y el estado están documentados en `img/personas/README.md`. No se prepara la entrega definitiva hasta recibir e integrar las cuatro fotografías.
+Las fotografías de Álvaro y Sofía ya están integradas en Inicio y Entrenadores con sus fondos editados y optimizadas en WebP. Quedan por recibir Deiby y Alex. Según la aclaración del usuario, Alex sustituirá al hombre del hero de la portada principal, no a THE TRAINING FLOOR. Los destinos y el estado están documentados en `img/personas/README.md`. No se prepara la entrega definitiva hasta recibir e integrar las cuatro fotografías.
