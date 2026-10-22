@@ -1,48 +1,844 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
-
-
-<head> 
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-<title>GYM FORCE</title> 
-
-<link rel="stylesheet" type="text/css" href="css/estilos.css?v=2" />
-</head> 
-
-<body>
-    <div id="cabecera"> 
-
-<h1>GYM FORCE</h1>
-
-<ul id="menu"> 
-
-  <li><a href="index.html">Inicio</a></li>
-  <li><a href="tarifas.html">Tarifas</a></li> 
-
-
-</ul>
-
- </div>
-  
-<div id="portada">
-
-<h2> SUPERA TUS LIMITES</h2> 
-
-<p>Entrena hoy para ser mejor mañana.</p> 
-
-<p><a href="tarifas.html"> VER TARIFAS</a></p>
-
-
-  </div>
-
-
-</body>
-
-
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Gym Force: un concepto de gimnasio urbano donde la fuerza, la comunidad y las ganas de superarte se encuentran. Proyecto de portfolio de Álvaro."
+    />
+    <meta name="theme-color" content="#111111" />
+    <title>GYM FORCE — Supera tus límites</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="fonts/barlow-condensed-800.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="img/gym-force-hero.webp"
+      as="image"
+      type="image/webp"
+      media="(min-width: 601px)"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Gym Force, inicio"
+          ><svg class="brand-symbol" viewBox="0 0 36 36" aria-hidden="true">
+            <path d="M12 8h8l-5 8h10L14 29l3-10H8z" /></svg
+          ><span>GYM<span class="brand-accent">FORCE</span></span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="navegacion"
+          aria-expanded="false"
+        >
+          <span class="menu-label">Menú</span
+          ><span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="main-nav" id="navegacion" aria-label="Navegación principal">
+          <a href="index.html" aria-current="page">Inicio</a
+          ><a href="instalaciones.html">Instalaciones</a
+          ><a href="clases.html">Clases</a
+          ><a href="entrenadores.html">Entrenadores</a
+          ><a href="tarifas.html">Tarifas</a
+          ><a href="entrenamiento.html">Entrenamiento</a
+          ><a href="contacto.html">Contacto</a
+          ><a class="button button-small nav-cta" href="tarifas.html"
+            >Hazte socio
+            <span aria-hidden="true"
+              ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19 19 5M5 5h14v14" /></svg></span
+          ></a>
+        </nav>
+      </div>
+    </header>
+    <main id="contenido">
+      <section class="hero" aria-labelledby="hero-title">
+        <picture class="hero-picture"
+          ><source
+            media="(max-width: 600px)"
+            srcset="img/gym-force-hero-mobile.webp" />
+          <img
+            src="img/gym-force-hero.webp"
+            width="1672"
+            height="941"
+            alt="Atleta preparándose para levantar una barra en un gimnasio de estética industrial"
+            fetchpriority="high"
+        /></picture>
+        <div class="hero-shade"></div>
+        <div class="container hero-content">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span> El cambio
+            empieza contigo
+          </p>
+          <h1 id="hero-title">SUPERA<br />TUS <span>LÍMITES.</span></h1>
+          <p class="hero-description">
+            Entrena hoy para ser mejor mañana.<br />Tu espacio. Tu ritmo. Tu
+            mejor versión.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="tarifas.html"
+              >Encuentra tu plan
+              <span aria-hidden="true"
+                ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 19 19 5M5 5h14v14" /></svg></span></a
+            ><a class="button button-outline" href="clases.html"
+              >Explora las clases
+              <span aria-hidden="true"
+                ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 12h16m-6-6 6 6-6 6" /></svg></span
+            ></a>
+          </div>
+          <div class="hero-footnote">
+            <span class="tiny-cross" aria-hidden="true"
+              ><svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 1v22M1 12h22M4 4l16 16M4 20 20 4" /></svg></span
+            ><span
+              >Todos los niveles.<br /><strong
+                >Las mismas ganas de ir a más.</strong
+              ></span
+            >
+          </div>
+        </div>
+        <div class="hero-side-label" aria-hidden="true">
+          DISCIPLINA. ENERGÍA. ACTITUD.
+        </div>
+        <div class="hero-bottom container">
+          <span>01 / TU SIGUIENTE NIVEL</span
+          ><a href="#filosofia"
+            >Descubre Gym Force
+            <span aria-hidden="true"
+              ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 4v16m-6-6 6 6 6-6" /></svg></span></a
+          ><span class="demo-label">Concepto de gimnasio · Portfolio</span>
+        </div>
+      </section>
+      <div class="manifesto-strip" aria-hidden="true">
+        <div>
+          FUERZA
+          <span
+            ><svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 1v22M1 12h22M4 4l16 16M4 20 20 4" /></svg
+          ></span>
+          ACTITUD
+          <span
+            ><svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 1v22M1 12h22M4 4l16 16M4 20 20 4" /></svg
+          ></span>
+          COMUNIDAD
+          <span
+            ><svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 1v22M1 12h22M4 4l16 16M4 20 20 4" /></svg
+          ></span>
+          SIN EXCUSAS
+          <span
+            ><svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 1v22M1 12h22M4 4l16 16M4 20 20 4" /></svg
+          ></span>
+          GYM FORCE
+          <span
+            ><svg class="star" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 1v22M1 12h22M4 4l16 16M4 20 20 4" /></svg
+          ></span>
+        </div>
+      </div>
+      <section
+        class="section intro-section"
+        id="filosofia"
+        aria-labelledby="intro-title"
+      >
+        <div class="container intro-grid">
+          <div>
+            <p class="eyebrow section-eyebrow">
+              <span class="section-number">01</span> Nuestra filosofía
+            </p>
+            <h2 id="intro-title">
+              NO ES SOLO<br />ENTRENAR.<br /><span class="text-muted"
+                >ES IR A MÁS.</span
+              >
+            </h2>
+          </div>
+          <div class="intro-copy">
+            <p class="lead">El peso que importa es el de tus ganas.</p>
+            <p>
+              Hay quien viene para empezar de cero. Quien quiere una repetición
+              más. Y quien simplemente busca ese rato para sí mismo. Aquí hay
+              espacio para todos.
+            </p>
+            <p>
+              Hemos imaginado un gimnasio donde el buen equipamiento, la energía
+              del grupo y el acompañamiento profesional te ayudan a dar el
+              siguiente paso.
+            </p>
+            <a class="text-link" href="#instalaciones"
+              >Conoce tu espacio
+              <span aria-hidden="true"
+                ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 19 19 5M5 5h14v14" /></svg></span
+            ></a>
+            <p class="context-note">
+              Gym Force es un proyecto de portfolio. Sus espacios, actividades y
+              precios son demostrativos.
+            </p>
+          </div>
+        </div>
+        <div class="container values-row">
+          <div>
+            <strong>01<span>/</span></strong>
+            <p>
+              Entrena a tu ritmo<small>Desde tu primer día, a tu manera.</small>
+            </p>
+          </div>
+          <div>
+            <strong>02<span>/</span></strong>
+            <p>
+              Encuentra tu comunidad<small
+                >La energía se entrena en equipo.</small
+              >
+            </p>
+          </div>
+          <div>
+            <strong>03<span>/</span></strong>
+            <p>Hazlo por ti<small>El progreso empieza con un paso.</small></p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section spaces-section"
+        id="instalaciones"
+        aria-labelledby="spaces-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow section-eyebrow">
+                <span class="section-number">02</span> El espacio
+              </p>
+              <h2 id="spaces-title">AQUÍ SE<br />CONSTRUYE EL CAMBIO.</h2>
+            </div>
+            <p>
+              Espacio para moverte.<br />Material para ir más lejos.<br />Motivos
+              para volver.
+            </p>
+          </div>
+          <div class="spaces-layout">
+            <div class="space-photo">
+              <img
+                src="img/gym-force-hero.webp"
+                alt="Concepto visual de la zona de fuerza: barras, discos y estructuras de entrenamiento"
+                width="1672"
+                height="941"
+                loading="lazy"
+              />
+              <div class="image-caption">
+                <span>THE TRAINING FLOOR</span
+                ><span aria-hidden="true"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></span>
+              </div>
+              <span class="image-tag">Imagen conceptual</span>
+            </div>
+            <div class="space-list">
+              <article>
+                <span class="space-index">01</span>
+                <div>
+                  <h3>Fuerza & peso libre</h3>
+                  <p>
+                    Racks, barras y mancuernas. Una base sólida para superar tu
+                    propia marca.
+                  </p>
+                </div>
+                <span class="space-mark" aria-hidden="true"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></span>
+              </article>
+              <article>
+                <span class="space-index">02</span>
+                <div>
+                  <h3>Cardio & resistencia</h3>
+                  <p>
+                    Cintas, bicicletas y elípticas para encontrar tu ritmo y
+                    mantenerlo.
+                  </p>
+                </div>
+                <span class="space-mark" aria-hidden="true"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></span>
+              </article>
+              <article>
+                <span class="space-index">03</span>
+                <div>
+                  <h3>Zona funcional</h3>
+                  <p>
+                    Movimiento real. Kettlebells, cuerdas y espacio para
+                    entrenar sin límites.
+                  </p>
+                </div>
+                <span class="space-mark" aria-hidden="true"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></span>
+              </article>
+              <article>
+                <span class="space-index">04</span>
+                <div>
+                  <h3>Salas & vestuarios</h3>
+                  <p>
+                    Salas colectivas para compartir energía y vestuarios para
+                    cerrar tu sesión.
+                  </p>
+                </div>
+                <span class="space-mark" aria-hidden="true"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section classes-section"
+        id="clases"
+        aria-labelledby="classes-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow section-eyebrow">
+                <span class="section-number">03</span> Encuentra tu energía
+              </p>
+              <h2 id="classes-title">
+                DISTINTOS RETOS.<br />LA MISMA ACTITUD.
+              </h2>
+            </div>
+            <p>
+              Más fuerza. Más ritmo. Más equilibrio.<br />Elige cómo quieres
+              moverte.
+            </p>
+          </div>
+          <div
+            class="filter-bar"
+            role="group"
+            aria-label="Filtrar clases por objetivo"
+          >
+            <button
+              type="button"
+              class="filter-button is-active"
+              data-class-filter="all"
+              aria-pressed="true"
+            >
+              Todas</button
+            ><button
+              type="button"
+              class="filter-button"
+              data-class-filter="strength"
+              aria-pressed="false"
+            >
+              Fuerza</button
+            ><button
+              type="button"
+              class="filter-button"
+              data-class-filter="cardio"
+              aria-pressed="false"
+            >
+              Cardio</button
+            ><button
+              type="button"
+              class="filter-button"
+              data-class-filter="balance"
+              aria-pressed="false"
+            >
+              Equilibrio
+            </button>
+          </div>
+          <p class="sr-only" id="class-status" role="status" aria-live="polite">
+            6 clases disponibles.
+          </p>
+          <div class="class-grid">
+            <article class="class-card" data-class-category="strength">
+              <div class="class-card-top">
+                <span class="class-category">FUERZA</span
+                ><span class="class-duration">45 MIN</span>
+              </div>
+              <span class="class-art" aria-hidden="true">01</span>
+              <h3>FUNCTIONAL<br />FORCE</h3>
+              <p>
+                Fuerza útil, movimientos completos y un reto diferente en cada
+                sesión.
+              </p>
+              <div class="class-meta">
+                <span
+                  ><i class="intensity intensity-medium" aria-hidden="true"></i
+                  >Intensidad media</span
+                ><a
+                  href="#contacto"
+                  class="class-link"
+                  aria-label="Consultar sobre Functional Force"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></a>
+              </div>
+            </article>
+            <article class="class-card" data-class-category="cardio">
+              <div class="class-card-top">
+                <span class="class-category">CARDIO</span
+                ><span class="class-duration">30 MIN</span>
+              </div>
+              <span class="class-art" aria-hidden="true">02</span>
+              <h3>HIIT<br />THE LIMIT</h3>
+              <p>
+                Intervalos cortos. Energía al máximo. Una sesión que se hace
+                sentir.
+              </p>
+              <div class="class-meta">
+                <span
+                  ><i class="intensity intensity-high" aria-hidden="true"></i
+                  >Intensidad alta</span
+                ><a
+                  href="#contacto"
+                  class="class-link"
+                  aria-label="Consultar sobre HIIT The Limit"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></a>
+              </div>
+            </article>
+            <article class="class-card" data-class-category="balance">
+              <div class="class-card-top">
+                <span class="class-category">EQUILIBRIO</span
+                ><span class="class-duration">50 MIN</span>
+              </div>
+              <span class="class-art" aria-hidden="true">03</span>
+              <h3>YOGA<br />RESET</h3>
+              <p>
+                Baja las revoluciones. Trabaja tu movilidad y vuelve a conectar
+                contigo.
+              </p>
+              <div class="class-meta">
+                <span
+                  ><i class="intensity intensity-low" aria-hidden="true"></i
+                  >Intensidad baja</span
+                ><a
+                  href="#contacto"
+                  class="class-link"
+                  aria-label="Consultar sobre Yoga Reset"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></a>
+              </div>
+            </article>
+            <article class="class-card" data-class-category="cardio">
+              <div class="class-card-top">
+                <span class="class-category">CARDIO</span
+                ><span class="class-duration">45 MIN</span>
+              </div>
+              <span class="class-art" aria-hidden="true">04</span>
+              <h3>RIDE<br />TOGETHER</h3>
+              <p>
+                Spinning, música y un grupo que te impulsa hasta la última
+                pedalada.
+              </p>
+              <div class="class-meta">
+                <span
+                  ><i class="intensity intensity-high" aria-hidden="true"></i
+                  >Intensidad alta</span
+                ><a
+                  href="#contacto"
+                  class="class-link"
+                  aria-label="Consultar sobre Ride Together"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></a>
+              </div>
+            </article>
+            <article class="class-card" data-class-category="strength">
+              <div class="class-card-top">
+                <span class="class-category">FUERZA</span
+                ><span class="class-duration">50 MIN</span>
+              </div>
+              <span class="class-art" aria-hidden="true">05</span>
+              <h3>BODY<br />POWER</h3>
+              <p>
+                Trabajo con barra al ritmo de la música. Repetición a
+                repetición, más fuerte.
+              </p>
+              <div class="class-meta">
+                <span
+                  ><i class="intensity intensity-medium" aria-hidden="true"></i
+                  >Intensidad media</span
+                ><a
+                  href="#contacto"
+                  class="class-link"
+                  aria-label="Consultar sobre Body Power"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></a>
+              </div>
+            </article>
+            <article class="class-card" data-class-category="cardio">
+              <div class="class-card-top">
+                <span class="class-category">CARDIO</span
+                ><span class="class-duration">45 MIN</span>
+              </div>
+              <span class="class-art" aria-hidden="true">06</span>
+              <h3>BOXING<br />ENERGY</h3>
+              <p>
+                Coordinación, técnica y cardio en una sesión de boxeo fitness
+                sin contacto.
+              </p>
+              <div class="class-meta">
+                <span
+                  ><i class="intensity intensity-high" aria-hidden="true"></i
+                  >Intensidad alta</span
+                ><a
+                  href="#contacto"
+                  class="class-link"
+                  aria-label="Consultar sobre Boxing Energy"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+          <a class="text-link catalog-link" href="clases.html"
+            >Ver clases y horarios de ejemplo
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 19 19 5M5 5h14v14" /></svg
+          ></a>
+          <p class="context-note">
+            Actividades ilustrativas del concepto Gym Force. Esta versión no
+            ofrece reservas ni horarios reales.
+          </p>
+        </div>
+      </section>
+      <section
+        class="section team-section"
+        id="equipo"
+        aria-labelledby="team-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow section-eyebrow">
+                <span class="section-number">04</span> El equipo
+              </p>
+              <h2 id="team-title">TU ESFUERZO.<br />UN IMPULSO EXTRA.</h2>
+            </div>
+            <p>La técnica importa.<br />El acompañamiento también.</p>
+          </div>
+          <div class="coach-grid">
+            <article class="coach-card">
+              <div class="coach-photo coach-0">
+                <img
+                  src="img/coaches.webp"
+                  alt="Retrato ilustrativo del perfil ficticio Diego Martín"
+                  width="1800"
+                  height="720"
+                  loading="lazy"
+                />
+              </div>
+              <div class="coach-copy">
+                <p class="eyebrow">Fuerza & hipertrofia</p>
+                <h3>Diego Martín</h3>
+                <p>
+                  Técnica primero. Diego representa una forma de entrenar basada
+                  en entender el movimiento, construir una buena base y celebrar
+                  cada avance.
+                </p>
+                <div class="coach-tags">
+                  <span>Fuerza</span><span>Hipertrofia</span
+                  ><span>Técnica</span>
+                </div>
+                <a class="text-link" href="entrenadores.html"
+                  >Conoce al equipo
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></a>
+              </div>
+            </article>
+            <article class="coach-card">
+              <div class="coach-photo coach-1">
+                <img
+                  src="img/coaches.webp"
+                  alt="Retrato ilustrativo del perfil ficticio Lucía Torres"
+                  width="1800"
+                  height="720"
+                  loading="lazy"
+                />
+              </div>
+              <div class="coach-copy">
+                <p class="eyebrow">Funcional & movilidad</p>
+                <h3>Lucía Torres</h3>
+                <p>
+                  Entrenar también es moverse mejor. Lucía pone el foco en el
+                  control, la movilidad y esa confianza que se gana con cada
+                  sesión.
+                </p>
+                <div class="coach-tags">
+                  <span>Funcional</span><span>Movilidad</span
+                  ><span>Clases colectivas</span>
+                </div>
+                <a class="text-link" href="entrenadores.html"
+                  >Conoce al equipo
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></a>
+              </div>
+            </article>
+            <article class="coach-card">
+              <div class="coach-photo coach-2">
+                <img
+                  src="img/coaches.webp"
+                  alt="Retrato ilustrativo del perfil ficticio Alex Brooks"
+                  width="1800"
+                  height="720"
+                  loading="lazy"
+                />
+              </div>
+              <div class="coach-copy">
+                <p class="eyebrow">Cardio & boxeo fitness</p>
+                <h3>Alex Brooks</h3>
+                <p>
+                  Energía que se contagia. Alex encarna la motivación de un
+                  entrenamiento en grupo, con intensidad adaptable y ganas de
+                  dar una vuelta más.
+                </p>
+                <div class="coach-tags">
+                  <span>HIIT</span><span>Boxeo fitness</span
+                  ><span>Resistencia</span>
+                </div>
+                <a class="text-link" href="entrenadores.html"
+                  >Conoce al equipo
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+          <p class="context-note">
+            Equipo ficticio de demostración. Retratos generados para el concepto
+            Gym Force.
+          </p>
+        </div>
+      </section>
+      <section class="training-teaser">
+        <div class="container">
+          <div>
+            <p class="eyebrow section-eyebrow">La base de tu progreso</p>
+            <h2>
+              ENTRENA CON<br /><span class="text-yellow">INTENCIÓN.</span>
+            </h2>
+          </div>
+          <div>
+            <p>
+              14 ejercicios. 7 grupos musculares.<br />Conoce los básicos y
+              entiende cada movimiento.
+            </p>
+            <a class="button button-outline" href="entrenamiento.html"
+              >Explora los ejercicios
+              <span aria-hidden="true"
+                ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 19 19 5M5 5h14v14" /></svg></span
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="plans-teaser" aria-labelledby="plans-title">
+        <div class="container plans-teaser-grid">
+          <div>
+            <p class="eyebrow">Sin excusas. Con un plan.</p>
+            <h2 id="plans-title">INVIERTE<br />EN TI.</h2>
+          </div>
+          <div class="teaser-offer">
+            <p>Tu siguiente paso, desde</p>
+            <p class="teaser-price">29,99<span>€ / mes</span></p>
+            <p>
+              Sala de musculación, cardio y clases dirigidas.<br />Tres planes.
+              Un mismo objetivo: avanzar.
+            </p>
+            <a class="button button-dark" href="tarifas.html"
+              >Descubre las tarifas
+              <span aria-hidden="true"
+                ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 19 19 5M5 5h14v14" /></svg></span></a
+            ><span class="teaser-note"
+              >Precios de demostración. No se realizan cobros.</span
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="section contact-section"
+        id="contacto"
+        aria-labelledby="contact-title"
+      >
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow section-eyebrow">
+              <span class="section-number">05</span> Da el primer paso
+            </p>
+            <h2 id="contact-title">
+              TU CAMBIO<br />EMPIEZA CON<br />UN
+              <span class="text-yellow">HOLA.</span>
+            </h2>
+            <p>
+              ¿Qué te mueve? Cuéntanos qué estás buscando y descubre cómo sería
+              empezar en Gym Force.
+            </p>
+            <div class="contact-demo">
+              <span aria-hidden="true"
+                ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 19 19 5M5 5h14v14" /></svg
+              ></span>
+              <div>
+                <strong>Un gimnasio imaginado. Un proyecto real.</strong>
+                <p>
+                  Esta web es una demostración de diseño y desarrollo. No
+                  representa a un negocio en funcionamiento.
+                </p>
+              </div>
+            </div>
+          </div>
+          <form
+            class="contact-form"
+            id="contact-form"
+            aria-describedby="form-notice"
+            action="#contacto"
+            method="get"
+          >
+            <h3>Hablemos de tu próximo paso.</h3>
+            <p id="form-notice" class="form-notice">
+              Formulario de demostración: no envía mensajes ni guarda datos.
+              Utiliza datos ficticios para probarlo.
+            </p>
+            <div class="form-row">
+              <div class="field">
+                <label for="nombre"
+                  >Tu nombre <span aria-hidden="true">*</span></label
+                ><input
+                  id="nombre"
+                  type="text"
+                  autocomplete="off"
+                  placeholder="¿Cómo te llamas?"
+                  maxlength="70"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="correo"
+                  >Tu email <span aria-hidden="true">*</span></label
+                ><input
+                  id="correo"
+                  type="email"
+                  autocomplete="off"
+                  placeholder="nombre@ejemplo.com"
+                  maxlength="150"
+                  required
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label for="interes">¿Qué te interesa?</label
+              ><select id="interes">
+                <option value="visita">Conocer Gym Force</option>
+                <option value="mensual">Plan mensual — 29,99 €</option>
+                <option value="trimestral">Plan trimestral — 79,99 €</option>
+                <option value="anual">Plan anual — 249,99 €</option>
+                <option value="clases">Las clases</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="mensaje"
+                >Cuéntanos un poco más
+                <span class="optional">(opcional)</span></label
+              ><textarea
+                id="mensaje"
+                rows="3"
+                maxlength="1000"
+                placeholder="Tu objetivo, tus dudas, tus ganas de empezar…"
+              ></textarea>
+            </div>
+            <button class="button form-submit" type="submit" disabled>
+              Probar formulario
+              <span aria-hidden="true"
+                ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 19 19 5M5 5h14v14" /></svg
+              ></span>
+            </button>
+            <p
+              class="form-feedback"
+              id="form-feedback"
+              role="status"
+              aria-live="polite"
+            ></p>
+            <noscript
+              ><p class="form-notice">
+                Activa JavaScript para probar la validación de este formulario
+                demostrativo.
+              </p></noscript
+            >
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer" id="pie">
+      <div class="container">
+        <div class="footer-top">
+          <a class="brand" href="index.html" aria-label="Gym Force, inicio"
+            ><svg class="brand-symbol" viewBox="0 0 36 36" aria-hidden="true">
+              <path d="M12 8h8l-5 8h10L14 29l3-10H8z" /></svg
+            ><span>GYM<span class="brand-accent">FORCE</span></span></a
+          >
+          <p>ENTRENA HOY.<br /><span>SUPÉRATE MAÑANA.</span></p>
+          <a class="back-top" href="#contenido"
+            >Volver arriba
+            <span aria-hidden="true"
+              ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 20V4m-6 6 6-6 6 6" /></svg></span
+          ></a>
+        </div>
+        <div class="footer-middle">
+          <p>
+            Fuerza, actitud y comunidad.<br />Un concepto de gimnasio con mucho
+            por delante.
+          </p>
+          <nav aria-label="Navegación del pie">
+            <a href="instalaciones.html">Instalaciones</a
+            ><a href="clases.html">Clases</a
+            ><a href="entrenadores.html">Entrenadores</a
+            ><a href="tarifas.html">Tarifas</a
+            ><a href="entrenamiento.html">Entrenamiento</a
+            ><a href="contacto.html">Contacto</a>
+          </nav>
+          <div class="footer-disclaimer">
+            <span class="status-dot" aria-hidden="true"></span>
+            <p>
+              Proyecto de portfolio<br /><span
+                >Contenido y servicios ficticios.</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Gym Force · Concepto web</span
+          ><a href="legal.html">Aviso legal y privacidad</a
+          ><span>Diseño y desarrollo web — Álvaro</span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

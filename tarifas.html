@@ -1,214 +1,269 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
-
-<head> 
- 
-<link rel="stylesheet" type="text/css" href="css/estilos.css?v=2" />
-
- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-    <title>Tarifas - GYM FORCE </title>
-
-</head> 
-
-<body> 
-
-  <div id="cabecera"> 
-
-<h1> GYM FORCE</h1>
-
-<ul id="menu"> 
-
-<li><a href="index.html">Inicio</a></li>
-<li><a href="tarifas.html">Tarifas</a></li>
-
-</ul>
-
-  </div>  
-
-
-<div id="pagina-tarifas"> 
-
-<h2> ELIGE TU PLAN </h2> 
-
-<p> Escoge la tarifa que mejor se adapte a ti.</p>
-
-
-<div class="tarifas-contenedor"> 
-
-<div class="tarifa"> 
-
-<h3> PLAN MENSUAL</h3>
-
-<p class="precio"> 29.99€</p>
-
-<p>Acceso completo durante un mes.</p>
-
-<ul> 
-
-<li>Acceso a sala de musculacion</li>
-
-<li>Zona de cardio</li>
-
-<li>Clases dirigidas</li>
-
-<li>Uso de vestuarios</li>
-
-</ul>
-
-<p> <a class="boton" href="#"> CONTRATAR</a></p> 
-
-</div> 
-
-<div class="tarifas"> 
-
-<h3>PLAN TRIMESTRAL</h3>
-
-<p class="precio"> 79,99 €</p>
-
-<p> Acceso completo durante tres meses.</p>
-
-<ul> 
-
-   <li>Acceso a sala de musculación</li>
-   <li>Zona de cardio</li>
-   <li>Clases dirigidas</li>
-   <li>Uso de vestuarios</li>
-
-
-</ul> 
-
-<p><a class="boton" href="#"> CONTRATAR</a></p>
-
-
-</div>
-
-<div class="tarifa destacada"> 
-
-<h3> PLAN ANUAL</h3> 
-
-<p class="precio"> 249.99€</p> 
-
-<p> Acceso completo durante un año.</p> 
-
-<ul> 
-
-<li>Acceso a sala de musculación</li>
-<li>Zona de cardio</li>
-<li>Clases dirigidas</li>
-<li>Uso de vestuarios</li>
-
-</ul>
-
-<p><a class="boton" href="#">CONTRATAR</a></p>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body> 
-
-
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Compara los planes mensual, trimestral y anual de Gym Force. Precios y servicios demostrativos para un proyecto de portfolio."
+    />
+    <meta name="theme-color" content="#111111" />
+    <title>Tarifas — GYM FORCE</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="fonts/barlow-condensed-800.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Gym Force, inicio"
+          ><svg class="brand-symbol" viewBox="0 0 36 36" aria-hidden="true">
+            <path d="M12 8h8l-5 8h10L14 29l3-10H8z" /></svg
+          ><span>GYM<span class="brand-accent">FORCE</span></span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="navegacion"
+          aria-expanded="false"
+        >
+          <span class="menu-label">Menú</span
+          ><span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="main-nav" id="navegacion" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a
+          ><a href="instalaciones.html">Instalaciones</a
+          ><a href="clases.html">Clases</a
+          ><a href="entrenadores.html">Entrenadores</a
+          ><a href="tarifas.html" aria-current="page">Tarifas</a
+          ><a href="entrenamiento.html">Entrenamiento</a
+          ><a href="contacto.html">Contacto</a
+          ><a class="button button-small nav-cta" href="tarifas.html"
+            >Hazte socio
+            <span aria-hidden="true"
+              ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19 19 5M5 5h14v14" /></svg></span
+          ></a>
+        </nav>
+      </div>
+    </header>
+    <main id="contenido">
+      <section class="page-intro">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Ruta de navegación">
+            <a href="index.html">Inicio</a><span aria-hidden="true">/</span
+            ><span aria-current="page">Tarifas</span>
+          </nav>
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span> Tu compromiso.
+            Tu ritmo.
+          </p>
+          <h1>UN PLAN PARA<br /><span class="text-yellow">IR A MÁS.</span></h1>
+          <p class="intro-text">
+            Tres formas de empezar. Todo lo que necesitas para entrenar.<br />Elige
+            cuánto tiempo quieres dedicarte.
+          </p>
+        </div>
+      </section>
+      <section class="pricing-section" aria-label="Comparativa de planes">
+        <div class="container">
+          <div class="pricing-grid">
+            <article class="pricing-card" aria-labelledby="plan-mensual">
+              <span class="plan-index">01</span>
+              <h2 id="plan-mensual">MENSUAL</h2>
+              <p class="plan-description">Tu entrenamiento, mes a mes.</p>
+              <p class="plan-price">29,99<span>€</span></p>
+              <p class="plan-term">Un pago por 1 mes</p>
+              <p class="plan-equivalent">29,99 € / mes</p>
+              <ul class="plan-features">
+                <li>Sala de musculación</li>
+                <li>Zona de peso libre</li>
+                <li>Cardio y zona funcional</li>
+                <li>Clases dirigidas</li>
+                <li>Uso de vestuarios</li>
+              </ul>
+              <a
+                class="button button-outline"
+                href="index.html?plan=mensual#contacto"
+                >Elegir mensual
+                <span aria-hidden="true"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg></span
+              ></a>
+            </article>
+            <article class="pricing-card" aria-labelledby="plan-trimestral">
+              <span class="plan-index">02</span>
+              <h2 id="plan-trimestral">TRIMESTRAL</h2>
+              <p class="plan-description">Dale continuidad a tu progreso.</p>
+              <p class="plan-price">79,99<span>€</span></p>
+              <p class="plan-term">Un pago por 3 meses</p>
+              <p class="plan-equivalent">Equivale a 26,66 € / mes</p>
+              <ul class="plan-features">
+                <li>Sala de musculación</li>
+                <li>Zona de peso libre</li>
+                <li>Cardio y zona funcional</li>
+                <li>Clases dirigidas</li>
+                <li>Uso de vestuarios</li>
+              </ul>
+              <a
+                class="button button-outline"
+                href="index.html?plan=trimestral#contacto"
+                >Elegir trimestral
+                <span aria-hidden="true"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg></span
+              ></a>
+            </article>
+            <article class="pricing-card featured" aria-labelledby="plan-anual">
+              <span class="plan-badge">MEJOR PRECIO</span
+              ><span class="plan-index">03</span>
+              <h2 id="plan-anual">ANUAL</h2>
+              <p class="plan-description">Haz del entrenamiento tu hábito.</p>
+              <p class="plan-price">249,99<span>€</span></p>
+              <p class="plan-term">Un pago por 12 meses</p>
+              <p class="plan-equivalent">Equivale a 20,83 € / mes</p>
+              <ul class="plan-features">
+                <li>Sala de musculación</li>
+                <li>Zona de peso libre</li>
+                <li>Cardio y zona funcional</li>
+                <li>Clases dirigidas</li>
+                <li>Uso de vestuarios</li>
+              </ul>
+              <a class="button" href="index.html?plan=anual#contacto"
+                >Elegir anual
+                <span aria-hidden="true"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg></span
+              ></a>
+            </article>
+          </div>
+          <div class="pricing-notes">
+            <p>
+              Precios ficticios de demostración. No se realizan altas ni cobros.
+            </p>
+            <p>
+              El importe indicado corresponde al periodo completo de cada plan.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section faq-section" aria-labelledby="faq-title">
+        <div class="container faq-grid">
+          <div>
+            <p class="eyebrow section-eyebrow">
+              <span class="section-number">FAQ</span> Resolvemos tus dudas
+            </p>
+            <h2 id="faq-title">TODO CLARO.<br />AHORA, A POR TI.</h2>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>¿Qué incluye cada plan?</summary>
+              <p>
+                Todos los planes del concepto incluyen musculación, peso libre,
+                cardio, zona funcional, clases dirigidas y vestuarios. La
+                diferencia está en su duración y precio.
+              </p>
+            </details>
+            <details>
+              <summary>¿Tengo que tener experiencia para empezar?</summary>
+              <p>
+                La propuesta de Gym Force está pensada para distintos niveles.
+                En un gimnasio real, pide una valoración inicial a un
+                profesional para adaptar la actividad a tu condición y
+                objetivos.
+              </p>
+            </details>
+            <details>
+              <summary>¿Cómo se paga el plan trimestral o anual?</summary>
+              <p>
+                Los precios mostrados son el importe total del periodo, no una
+                cuota mensual. La cifra equivalente por mes sirve para comparar.
+                Esta web no tiene pasarela de pago y no realiza cobros.
+              </p>
+            </details>
+            <details>
+              <summary>¿Puedo contratar o reservar desde esta web?</summary>
+              <p>
+                No. Gym Force es un proyecto de portfolio. El botón de cada plan
+                abre el formulario de demostración con tu opción seleccionada;
+                no genera altas, suscripciones ni reservas.
+              </p>
+            </details>
+            <details>
+              <summary>¿Hay permanencia o condiciones comerciales?</summary>
+              <p>
+                Al ser un gimnasio ficticio, no existen contratos ni condiciones
+                comerciales reales. Estas condiciones se definirían antes de
+                ofrecer un servicio al público.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="container page-cta">
+        <h2>EL PRIMER PASO<br />ES <span class="text-yellow">TUYO.</span></h2>
+        <p>Explora cómo sería dar el salto a Gym Force.</p>
+        <a class="button" href="index.html#contacto"
+          >Conoce el concepto
+          <span aria-hidden="true"
+            ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 19 19 5M5 5h14v14" /></svg></span
+        ></a>
+      </section>
+    </main>
+    <footer class="site-footer" id="pie">
+      <div class="container">
+        <div class="footer-top">
+          <a class="brand" href="index.html" aria-label="Gym Force, inicio"
+            ><svg class="brand-symbol" viewBox="0 0 36 36" aria-hidden="true">
+              <path d="M12 8h8l-5 8h10L14 29l3-10H8z" /></svg
+            ><span>GYM<span class="brand-accent">FORCE</span></span></a
+          >
+          <p>ENTRENA HOY.<br /><span>SUPÉRATE MAÑANA.</span></p>
+          <a class="back-top" href="#contenido"
+            >Volver arriba
+            <span aria-hidden="true"
+              ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 20V4m-6 6 6-6 6 6" /></svg></span
+          ></a>
+        </div>
+        <div class="footer-middle">
+          <p>
+            Fuerza, actitud y comunidad.<br />Un concepto de gimnasio con mucho
+            por delante.
+          </p>
+          <nav aria-label="Navegación del pie">
+            <a href="instalaciones.html">Instalaciones</a
+            ><a href="clases.html">Clases</a
+            ><a href="entrenadores.html">Entrenadores</a
+            ><a href="tarifas.html">Tarifas</a
+            ><a href="entrenamiento.html">Entrenamiento</a
+            ><a href="contacto.html">Contacto</a>
+          </nav>
+          <div class="footer-disclaimer">
+            <span class="status-dot" aria-hidden="true"></span>
+            <p>
+              Proyecto de portfolio<br /><span
+                >Contenido y servicios ficticios.</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Gym Force · Concepto web</span
+          ><a href="legal.html">Aviso legal y privacidad</a
+          ><span>Diseño y desarrollo web — Álvaro</span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Biblioteca de 14 ejercicios de Gym Force. Filtra por grupo muscular y busca ejercicios con técnica básica, series y repeticiones orientativas."
+    />
+    <meta name="theme-color" content="#111111" />
+    <title>Entrenamiento — GYM FORCE</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="fonts/barlow-condensed-800.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Gym Force, inicio"
+          ><svg class="brand-symbol" viewBox="0 0 36 36" aria-hidden="true">
+            <path d="M12 8h8l-5 8h10L14 29l3-10H8z" /></svg
+          ><span>GYM<span class="brand-accent">FORCE</span></span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="navegacion"
+          aria-expanded="false"
+        >
+          <span class="menu-label">Menú</span
+          ><span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="main-nav" id="navegacion" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a
+          ><a href="instalaciones.html">Instalaciones</a
+          ><a href="clases.html">Clases</a
+          ><a href="entrenadores.html">Entrenadores</a
+          ><a href="tarifas.html">Tarifas</a
+          ><a href="entrenamiento.html" aria-current="page">Entrenamiento</a
+          ><a href="contacto.html">Contacto</a
+          ><a class="button button-small nav-cta" href="tarifas.html"
+            >Hazte socio
+            <span aria-hidden="true"
+              ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19 19 5M5 5h14v14" /></svg></span
+          ></a>
+        </nav>
+      </div>
+    </header>
+    <main id="contenido">
+      <section class="page-intro">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Ruta de navegación">
+            <a href="index.html">Inicio</a><span aria-hidden="true">/</span
+            ><span aria-current="page">Entrenamiento</span>
+          </nav>
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span> GYM FORCE /
+            Entrenamiento
+          </p>
+          <h1>
+            ENTIENDE EL MOVIMIENTO.<br /><span class="text-yellow"
+              >MEJORA TU BASE.</span
+            >
+          </h1>
+          <p class="intro-text">
+            Una biblioteca para conocer los básicos. Encuentra un grupo muscular
+            y explora cómo se trabaja.
+          </p>
+        </div>
+      </section>
+      <section class="catalog-section" aria-label="Biblioteca de ejercicios">
+        <div class="container">
+          <p class="catalog-note training-note">
+            Guía general de demostración, no una rutina individual. Ajusta
+            cargas y actividad con un profesional. Los esquemas señalan la zona
+            principal, no representan la ejecución del ejercicio.
+          </p>
+          <div class="exercise-tools">
+            <label for="exercise-search"
+              >Buscar un ejercicio<input
+                id="exercise-search"
+                type="search"
+                placeholder="Por ejemplo: sentadilla o bíceps"
+                autocomplete="off"
+            /></label>
+            <div
+              class="filter-bar"
+              role="group"
+              aria-label="Filtrar ejercicios por grupo muscular"
+            >
+              <button
+                class="filter-button is-active"
+                type="button"
+                data-exercise-filter="all"
+                aria-pressed="true"
+              >
+                Todos</button
+              ><button
+                class="filter-button"
+                type="button"
+                data-exercise-filter="pecho"
+                aria-pressed="false"
+              >
+                Pecho</button
+              ><button
+                class="filter-button"
+                type="button"
+                data-exercise-filter="espalda"
+                aria-pressed="false"
+              >
+                Espalda</button
+              ><button
+                class="filter-button"
+                type="button"
+                data-exercise-filter="piernas"
+                aria-pressed="false"
+              >
+                Piernas</button
+              ><button
+                class="filter-button"
+                type="button"
+                data-exercise-filter="hombros"
+                aria-pressed="false"
+              >
+                Hombros</button
+              ><button
+                class="filter-button"
+                type="button"
+                data-exercise-filter="biceps"
+                aria-pressed="false"
+              >
+                Bíceps</button
+              ><button
+                class="filter-button"
+                type="button"
+                data-exercise-filter="triceps"
+                aria-pressed="false"
+              >
+                Tríceps</button
+              ><button
+                class="filter-button"
+                type="button"
+                data-exercise-filter="core"
+                aria-pressed="false"
+              >
+                Core
+              </button>
+            </div>
+          </div>
+          <p
+            class="results-count"
+            id="exercise-status"
+            role="status"
+            aria-live="polite"
+          >
+            14 ejercicios disponibles.
+          </p>
+          <div class="exercise-grid">
+            <article
+              class="exercise-card"
+              data-muscle="pecho"
+              data-search="Press con mancuernas Pecho"
+            >
+              <div class="exercise-visual">
+                <svg
+                  class="muscle-diagram"
+                  viewBox="0 0 100 125"
+                  role="img"
+                  aria-label="Esquema de la zona muscular: pecho"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="50" cy="17" r="8" />
+                    <path
+                      d="M38 30 29 39 22 66M62 30 71 39 78 66M38 30h24l4 37-8 48M42 115l-8-48 4-37M34 67h32M50 69v44"
+                    />
+                  </g>
+                  <g class="muscle-highlight">
+                    <path d="M39 34h22v15H39z" />
+                  </g></svg
+                ><span class="exercise-number">01</span
+                ><span class="exercise-group">Pecho · Vista anterior</span>
+              </div>
+              <div class="exercise-copy">
+                <h2>Press con mancuernas</h2>
+                <p>
+                  Tumbado en un banco, empuja las mancuernas de forma
+                  controlada.
+                </p>
+                <dl class="exercise-prescription">
+                  <div>
+                    <dt>Series orientativas</dt>
+                    <dd>3</dd>
+                  </div>
+                  <div>
+                    <dt>Repeticiones</dt>
+                    <dd>8–12</dd>
+                  </div>
+                </dl>
+                <details>
+                  <summary>Técnica básica</summary>
+                  <ol>
+                    <li>Apoya los pies y mantén la espalda estable.</li>
+                    <li>Coloca las muñecas sobre los codos.</li>
+                    <li>Baja sin rebotes y empuja sin perder el control.</li>
+                  </ol>
+                </details>
+              </div>
+            </article>
+            <article
+              class="exercise-card"
+              data-muscle="pecho"
+              data-search="Flexiones Pecho"
+            >
+              <div class="exercise-visual">
+                <svg
+                  class="muscle-diagram"
+                  viewBox="0 0 100 125"
+                  role="img"
+                  aria-label="Esquema de la zona muscular: pecho"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="50" cy="17" r="8" />
+                    <path
+                      d="M38 30 29 39 22 66M62 30 71 39 78 66M38 30h24l4 37-8 48M42 115l-8-48 4-37M34 67h32M50 69v44"
+                    />
+                  </g>
+                  <g class="muscle-highlight">
+                    <path d="M39 34h22v15H39z" />
+                  </g></svg
+                ><span class="exercise-number">02</span
+                ><span class="exercise-group">Pecho · Vista anterior</span>
+              </div>
+              <div class="exercise-copy">
+                <h2>Flexiones</h2>
+                <p>
+                  Un básico de empuje que puedes adaptar apoyando las manos en
+                  una superficie elevada.
+                </p>
+                <dl class="exercise-prescription">
+                  <div>
+                    <dt>Series orientativas</dt>
+                    <dd>3</dd>
+                  </div>
+                  <div>
+                    <dt>Repeticiones</dt>
+                    <dd>6–12</dd>
+                  </div>
+                </dl>
+                <details>
+                  <summary>Técnica básica</summary>
+                  <ol>
+                    <li>Mantén el cuerpo alineado de cabeza a pies.</li>
+                    <li>Baja el pecho acercando los codos al tronco.</li>
+                    <li>Empuja el suelo sin hundir la zona lumbar.</li>
+                  </ol>
+                </details>
+              </div>
+            </article>
+            <article
+              class="exercise-card"
+              data-muscle="espalda"
+              data-search="Remo con mancuerna Espalda"
+            >
+              <div class="exercise-visual">
+                <svg
+                  class="muscle-diagram"
+                  viewBox="0 0 100 125"
+                  role="img"
+                  aria-label="Esquema de la zona muscular: espalda"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="50" cy="17" r="8" />
+                    <path
+                      d="M38 30 29 39 22 66M62 30 71 39 78 66M38 30h24l4 37-8 48M42 115l-8-48 4-37M34 67h32M50 69v44"
+                    />
+                  </g>
+                  <g class="muscle-highlight">
+                    <path d="m39 33 22 0 1 24-12 10-12-10z" />
+                  </g></svg
+                ><span class="exercise-number">03</span
+                ><span class="exercise-group">Espalda · Vista posterior</span>
+              </div>
+              <div class="exercise-copy">
+                <h2>Remo con mancuerna</h2>
+                <p>
+                  Tracciona una mancuerna hacia la cadera con un apoyo estable.
+                </p>
+                <dl class="exercise-prescription">
+                  <div>
+                    <dt>Series orientativas</dt>
+                    <dd>3</dd>
+                  </div>
+                  <div>
+                    <dt>Repeticiones</dt>
+                    <dd>10–12</dd>
+                  </div>
+                </dl>
+                <details>
+                  <summary>Técnica básica</summary>
+                  <ol>
+                    <li>Apoya una mano en un banco firme.</li>
+                    <li>Mantén la espalda neutra y el abdomen activo.</li>
+                    <li>Lleva el codo hacia atrás sin girar el tronco.</li>
+                  </ol>
+                </details>
+              </div>
+            </article>
+            <article
+              class="exercise-card"
+              data-muscle="espalda"
+              data-search="Jalón al pecho Espalda"
+            >
+              <div class="exercise-visual">
+                <svg
+                  class="muscle-diagram"
+                  viewBox="0 0 100 125"
+                  role="img"
+                  aria-label="Esquema de la zona muscular: espalda"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="50" cy="17" r="8" />
+                    <path
+                      d="M38 30 29 39 22 66M62 30 71 39 78 66M38 30h24l4 37-8 48M42 115l-8-48 4-37M34 67h32M50 69v44"
+                    />
+                  </g>
+                  <g class="muscle-highlight">
+                    <path d="m39 33 22 0 1 24-12 10-12-10z" />
+                  </g></svg
+                ><span class="exercise-number">04</span
+                ><span class="exercise-group">Espalda · Vista posterior</span>
+              </div>
+              <div class="exercise-copy">
+                <h2>Jalón al pecho</h2>
+                <p>
+                  Trabaja la tracción vertical con una polea y un recorrido
+                  cómodo.
+                </p>
+                <dl class="exercise-prescription">
+                  <div>
+                    <dt>Series orientativas</dt>
+                    <dd>3</dd>
+                  </div>
+                  <div>
+                    <dt>Repeticiones</dt>
+                    <dd>10–12</dd>
+                  </div>
+                </dl>
+                <details>
+                  <summary>Técnica básica</summary>
+                  <ol>
+                    <li>Ajusta el asiento y apoya bien los pies.</li>
+                    <li>Acerca la barra a la parte alta del pecho.</li>
+                    <li>Evita balancearte y controla la subida.</li>
+                  </ol>
+                </details>
+              </div>
+            </article>
+            <article
+              class="exercise-card"
+              data-muscle="piernas"
+              data-search="Sentadilla goblet Piernas"
+            >
+              <div class="exercise-visual">
+                <svg
+                  class="muscle-diagram"
+                  viewBox="0 0 100 125"
+                  role="img"
+                  aria-label="Esquema de la zona muscular: piernas"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="50" cy="17" r="8" />
+                    <path
+                      d="M38 30 29 39 22 66M62 30 71 39 78 66M38 30h24l4 37-8 48M42 115l-8-48 4-37M34 67h32M50 69v44"
+                    />
+                  </g>
+                  <g class="muscle-highlight">
+                    <path d="m36 70 10 0-2 38h-6zm18 0h10l-4 38h-6z" />
+                  </g></svg
+                ><span class="exercise-number">05</span
+                ><span class="exercise-group">Piernas · Vista anterior</span>
+              </div>
+              <div class="exercise-copy">
+                <h2>Sentadilla goblet</h2>
+                <p>
+                  Sujeta una mancuerna delante del pecho y practica una
+                  sentadilla controlada.
+                </p>
+                <dl class="exercise-prescription">
+                  <div>
+                    <dt>Series orientativas</dt>
+                    <dd>3</dd>
+                  </div>
+                  <div>
+                    <dt>Repeticiones</dt>
+                    <dd>8–12</dd>
+                  </div>
+                </dl>
+                <details>
+                  <summary>Técnica básica</summary>
+                  <ol>
+                    <li>Abre los pies en una posición cómoda.</li>
+                    <li>
+                      Flexiona caderas y rodillas manteniendo el peso centrado.
+                    </li>
+                    <li>Sube empujando el suelo sin perder la postura.</li>
+                  </ol>
+                </details>
+              </div>
+            </article>
+            <article
+              class="exercise-card"
+              data-muscle="piernas"
+              data-search="Peso muerto rumano Piernas"
+            >
+              <div class="exercise-visual">
+                <svg
+                  class="muscle-diagram"
+                  viewBox="0 0 100 125"
+                  role="img"
+                  aria-label="Esquema de la zona muscular: piernas"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="50" cy="17" r="8" />
+                    <path
+                      d="M38 30 29 39 22 66M62 30 71 39 78 66M38 30h24l4 37-8 48M42 115l-8-48 4-37M34 67h32M50 69v44"
+                    />
+                  </g>
+                  <g class="muscle-highlight">
+                    <path d="m36 70 10 0-2 38h-6zm18 0h10l-4 38h-6z" />
+                  </g></svg
+                ><span class="exercise-number">06</span
+                ><span class="exercise-group">Piernas · Vista anterior</span>
+              </div>
+              <div class="exercise-copy">
+                <h2>Peso muerto rumano</h2>
+                <p>
+                  Un movimiento de bisagra de cadera para la cadena posterior.
+                </p>
+                <dl class="exercise-prescription">
+                  <div>
+                    <dt>Series orientativas</dt>
+                    <dd>3</dd>
+                  </div>
+                  <div>
+                    <dt>Repeticiones</dt>
+                    <dd>8–10</dd>
+                  </div>
+                </dl>
+                <details>
+                  <summary>Técnica básica</summary>
+                  <ol>
+                    <li>Mantén una ligera flexión de rodillas.</li>
+                    <li>
+                      Lleva la cadera hacia atrás con la carga cerca de las
+                      piernas.
+                    </li>
+                    <li>Detén la bajada antes de redondear la espalda.</li>
+                  </ol>
+                </details>
+              </div>
+            </article>
+            <article
+              class="exercise-card"
+              data-muscle="hombros"
+              data-search="Press de hombros sentado Hombros"
+            >
+              <div class="exercise-visual">
+                <svg
+                  class="muscle-diagram"
+                  viewBox="0 0 100 125"
+                  role="img"
+                  aria-label="Esquema de la zona muscular: hombros"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="50" cy="17" r="8" />
+                    <path
+                      d="M38 30 29 39 22 66M62 30 71 39 78 66M38 30h24l4 37-8 48M42 115l-8-48 4-37M34 67h32M50 69v44"
+                    />
+                  </g>
+                  <g class="muscle-highlight">
+                    <path d="m35 30 7 3-3 12-8-3zm30 0-7 3 3 12 8-3z" />
+                  </g></svg
+                ><span class="exercise-number">07</span
+                ><span class="exercise-group">Hombros · Vista anterior</span>
+              </div>
+              <div class="exercise-copy">
+                <h2>Press de hombros sentado</h2>
+                <p>
+                  Empuja las mancuernas por encima de la cabeza con la espalda
+                  apoyada.
+                </p>
+                <dl class="exercise-prescription">
+                  <div>
+                    <dt>Series orientativas</dt>
+                    <dd>3</dd>
+                  </div>
+                  <div>
+                    <dt>Repeticiones</dt>
+                    <dd>8–12</dd>
+                  </div>
+                </dl>
+                <details>
+                  <summary>Técnica básica</summary>
+                  <ol>
+                    <li>Ajusta el banco y mantén los pies apoyados.</li>
+                    <li>Empuja en un recorrido cómodo para tus hombros.</li>
+                    <li>Controla la bajada sin arquear la zona lumbar.</li>
+                  </ol>
+                </details>
+              </div>
+            </article>
+            <article
+              class="exercise-card"
+              data-muscle="hombros"
+              data-search="Elevaciones laterales Hombros"
+            >
+              <div class="exercise-visual">
+                <svg
+                  class="muscle-diagram"
+                  viewBox="0 0 100 125"
+                  role="img"
+                  aria-label="Esquema de la zona muscular: hombros"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="50" cy="17" r="8" />
+                    <path
+                      d="M38 30 29 39 22 66M62 30 71 39 78 66M38 30h24l4 37-8 48M42 115l-8-48 4-37M34 67h32M50 69v44"
+                    />
+                  </g>
+                  <g class="muscle-highlight">
+                    <path d="m35 30 7 3-3 12-8-3zm30 0-7 3 3 12 8-3z" />
+                  </g></svg
+                ><span class="exercise-number">08</span
+                ><span class="exercise-group">Hombros · Vista anterior</span>
+              </div>
+              <div class="exercise-copy">
+                <h2>Elevaciones laterales</h2>
+                <p>
+                  Eleva los brazos hacia los lados con una carga ligera y sin
+                  impulso.
+                </p>
+                <dl class="exercise-prescription">
+                  <div>
+                    <dt>Series orientativas</dt>
+                    <dd>3</dd>
+                  </div>
+                  <div>
+                    <dt>Repeticiones</dt>
+                    <dd>12–15</dd>
+                  </div>
+                </dl>
+                <details>
+                  <summary>Técnica básica</summary>
+                  <ol>
+                    <li>Flexiona ligeramente los codos.</li>
+                    <li>
+                      Eleva hasta una altura cómoda, cerca de la línea de
+                      hombros.
+                    </li>
+                    <li>Baja despacio y evita encoger el cuello.</li>
+                  </ol>
+                </details>
+              </div>
+            </article>
+            <article
+              class="exercise-card"
+              data-muscle="biceps"
+              data-search="Curl con mancuernas Bíceps"
+            >
+              <div class="exercise-visual">
+                <svg
+                  class="muscle-diagram"
+                  viewBox="0 0 100 125"
+                  role="img"
+                  aria-label="Esquema de la zona muscular: biceps"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="50" cy="17" r="8" />
+                    <path
+                      d="M38 30 29 39 22 66M62 30 71 39 78 66M38 30h24l4 37-8 48M42 115l-8-48 4-37M34 67h32M50 69v44"
+                    />
+                  </g>
+                  <g class="muscle-highlight">
+                    <path d="m29 40 8 3-6 15-7-3zm42 0-8 3 6 15 7-3z" />
+                  </g></svg
+                ><span class="exercise-number">09</span
+                ><span class="exercise-group">Bíceps · Vista anterior</span>
+              </div>
+              <div class="exercise-copy">
+                <h2>Curl con mancuernas</h2>
+                <p>
+                  Flexiona el codo manteniendo el brazo estable al lado del
+                  cuerpo.
+                </p>
+                <dl class="exercise-prescription">
+                  <div>
+                    <dt>Series orientativas</dt>
+                    <dd>3</dd>
+                  </div>
+                  <div>
+                    <dt>Repeticiones</dt>
+                    <dd>10–12</dd>
+                  </div>
+                </dl>
+                <details>
+                  <summary>Técnica básica</summary>
+                  <ol>
+                    <li>Mantén una postura erguida y sin balanceos.</li>
+                    <li>Sube sin desplazar los codos hacia delante.</li>
+                    <li>Extiende de nuevo con control.</li>
+                  </ol>
+                </details>
+              </div>
+            </article>
+            <article
+              class="exercise-card"
+              data-muscle="biceps"
+              data-search="Curl martillo Bíceps"
+            >
+              <div class="exercise-visual">
+                <svg
+                  class="muscle-diagram"
+                  viewBox="0 0 100 125"
+                  role="img"
+                  aria-label="Esquema de la zona muscular: biceps"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="50" cy="17" r="8" />
+                    <path
+                      d="M38 30 29 39 22 66M62 30 71 39 78 66M38 30h24l4 37-8 48M42 115l-8-48 4-37M34 67h32M50 69v44"
+                    />
+                  </g>
+                  <g class="muscle-highlight">
+                    <path d="m29 40 8 3-6 15-7-3zm42 0-8 3 6 15 7-3z" />
+                  </g></svg
+                ><span class="exercise-number">10</span
+                ><span class="exercise-group">Bíceps · Vista anterior</span>
+              </div>
+              <div class="exercise-copy">
+                <h2>Curl martillo</h2>
+                <p>
+                  Trabaja la flexión del codo con las palmas mirándose entre sí.
+                </p>
+                <dl class="exercise-prescription">
+                  <div>
+                    <dt>Series orientativas</dt>
+                    <dd>3</dd>
+                  </div>
+                  <div>
+                    <dt>Repeticiones</dt>
+                    <dd>10–12</dd>
+                  </div>
+                </dl>
+                <details>
+                  <summary>Técnica básica</summary>
+                  <ol>
+                    <li>Sujeta las mancuernas con las muñecas neutras.</li>
+                    <li>Flexiona los codos sin mover el tronco.</li>
+                    <li>Controla todo el recorrido de bajada.</li>
+                  </ol>
+                </details>
+              </div>
+            </article>
+            <article
+              class="exercise-card"
+              data-muscle="triceps"
+              data-search="Extensión en polea Tríceps"
+            >
+              <div class="exercise-visual">
+                <svg
+                  class="muscle-diagram"
+                  viewBox="0 0 100 125"
+                  role="img"
+                  aria-label="Esquema de la zona muscular: triceps"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="50" cy="17" r="8" />
+                    <path
+                      d="M38 30 29 39 22 66M62 30 71 39 78 66M38 30h24l4 37-8 48M42 115l-8-48 4-37M34 67h32M50 69v44"
+                    />
+                  </g>
+                  <g class="muscle-highlight">
+                    <path d="m29 40 8 3-6 15-7-3zm42 0-8 3 6 15 7-3z" />
+                  </g></svg
+                ><span class="exercise-number">11</span
+                ><span class="exercise-group">Tríceps · Vista posterior</span>
+              </div>
+              <div class="exercise-copy">
+                <h2>Extensión en polea</h2>
+                <p>
+                  Extiende los codos en una polea alta sin mover los hombros.
+                </p>
+                <dl class="exercise-prescription">
+                  <div>
+                    <dt>Series orientativas</dt>
+                    <dd>3</dd>
+                  </div>
+                  <div>
+                    <dt>Repeticiones</dt>
+                    <dd>10–12</dd>
+                  </div>
+                </dl>
+                <details>
+                  <summary>Técnica básica</summary>
+                  <ol>
+                    <li>Coloca los codos junto al cuerpo.</li>
+                    <li>Empuja el agarre hacia abajo sin balancearte.</li>
+                    <li>Vuelve despacio, manteniendo la tensión.</li>
+                  </ol>
+                </details>
+              </div>
+            </article>
+            <article
+              class="exercise-card"
+              data-muscle="triceps"
+              data-search="Extensión sobre la cabeza Tríceps"
+            >
+              <div class="exercise-visual">
+                <svg
+                  class="muscle-diagram"
+                  viewBox="0 0 100 125"
+                  role="img"
+                  aria-label="Esquema de la zona muscular: triceps"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="50" cy="17" r="8" />
+                    <path
+                      d="M38 30 29 39 22 66M62 30 71 39 78 66M38 30h24l4 37-8 48M42 115l-8-48 4-37M34 67h32M50 69v44"
+                    />
+                  </g>
+                  <g class="muscle-highlight">
+                    <path d="m29 40 8 3-6 15-7-3zm42 0-8 3 6 15 7-3z" />
+                  </g></svg
+                ><span class="exercise-number">12</span
+                ><span class="exercise-group">Tríceps · Vista posterior</span>
+              </div>
+              <div class="exercise-copy">
+                <h2>Extensión sobre la cabeza</h2>
+                <p>
+                  Extiende los codos con una mancuerna ligera sostenida sobre la
+                  cabeza.
+                </p>
+                <dl class="exercise-prescription">
+                  <div>
+                    <dt>Series orientativas</dt>
+                    <dd>2</dd>
+                  </div>
+                  <div>
+                    <dt>Repeticiones</dt>
+                    <dd>10–12</dd>
+                  </div>
+                </dl>
+                <details>
+                  <summary>Técnica básica</summary>
+                  <ol>
+                    <li>Sujeta la carga con seguridad y activa el abdomen.</li>
+                    <li>Flexiona los codos sin abrirlos de forma forzada.</li>
+                    <li>
+                      Extiende hasta un rango cómodo, sin arquear la espalda.
+                    </li>
+                  </ol>
+                </details>
+              </div>
+            </article>
+            <article
+              class="exercise-card"
+              data-muscle="core"
+              data-search="Plancha frontal Core"
+            >
+              <div class="exercise-visual">
+                <svg
+                  class="muscle-diagram"
+                  viewBox="0 0 100 125"
+                  role="img"
+                  aria-label="Esquema de la zona muscular: core"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="50" cy="17" r="8" />
+                    <path
+                      d="M38 30 29 39 22 66M62 30 71 39 78 66M38 30h24l4 37-8 48M42 115l-8-48 4-37M34 67h32M50 69v44"
+                    />
+                  </g>
+                  <g class="muscle-highlight">
+                    <path d="M41 50h18v16H41z" />
+                  </g></svg
+                ><span class="exercise-number">13</span
+                ><span class="exercise-group">Core · Vista anterior</span>
+              </div>
+              <div class="exercise-copy">
+                <h2>Plancha frontal</h2>
+                <p>Mantén una posición estable apoyado en antebrazos y pies.</p>
+                <dl class="exercise-prescription">
+                  <div>
+                    <dt>Series orientativas</dt>
+                    <dd>3</dd>
+                  </div>
+                  <div>
+                    <dt>Tiempo</dt>
+                    <dd>20–30 s</dd>
+                  </div>
+                </dl>
+                <details>
+                  <summary>Técnica básica</summary>
+                  <ol>
+                    <li>Coloca los codos debajo de los hombros.</li>
+                    <li>Mantén la pelvis y el tronco alineados.</li>
+                    <li>
+                      Respira con normalidad y termina si pierdes la postura.
+                    </li>
+                  </ol>
+                </details>
+              </div>
+            </article>
+            <article
+              class="exercise-card"
+              data-muscle="core"
+              data-search="Bird dog Core"
+            >
+              <div class="exercise-visual">
+                <svg
+                  class="muscle-diagram"
+                  viewBox="0 0 100 125"
+                  role="img"
+                  aria-label="Esquema de la zona muscular: core"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="50" cy="17" r="8" />
+                    <path
+                      d="M38 30 29 39 22 66M62 30 71 39 78 66M38 30h24l4 37-8 48M42 115l-8-48 4-37M34 67h32M50 69v44"
+                    />
+                  </g>
+                  <g class="muscle-highlight">
+                    <path d="M41 50h18v16H41z" />
+                  </g></svg
+                ><span class="exercise-number">14</span
+                ><span class="exercise-group">Core · Vista anterior</span>
+              </div>
+              <div class="exercise-copy">
+                <h2>Bird dog</h2>
+                <p>
+                  Desde cuadrupedia, extiende un brazo y la pierna contraria de
+                  forma alterna.
+                </p>
+                <dl class="exercise-prescription">
+                  <div>
+                    <dt>Series orientativas</dt>
+                    <dd>3</dd>
+                  </div>
+                  <div>
+                    <dt>Repeticiones</dt>
+                    <dd>6–10 / lado</dd>
+                  </div>
+                </dl>
+                <details>
+                  <summary>Técnica básica</summary>
+                  <ol>
+                    <li>Apoya las manos debajo de los hombros.</li>
+                    <li>Extiende sin girar la pelvis ni arquear la espalda.</li>
+                    <li>Vuelve al centro y cambia de lado con control.</li>
+                  </ol>
+                </details>
+              </div>
+            </article>
+          </div>
+          <div class="empty-state" id="exercise-empty" hidden>
+            <h2>NO HAY COINCIDENCIAS.</h2>
+            <p>Prueba otro nombre o cambia el grupo muscular.</p>
+            <button
+              class="button button-outline"
+              type="button"
+              id="exercise-reset"
+            >
+              Mostrar todos los ejercicios
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="container page-cta">
+        <h2>
+          LA TÉCNICA PRIMERO.<br /><span class="text-yellow">TÚ, SIEMPRE.</span>
+        </h2>
+        <p>Descubre los perfiles de entrenamiento del concepto Gym Force.</p>
+        <a class="button" href="entrenadores.html"
+          >Conoce al equipo
+          <span aria-hidden="true"
+            ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 19 19 5M5 5h14v14" /></svg></span
+        ></a>
+      </section>
+    </main>
+    <footer class="site-footer" id="pie">
+      <div class="container">
+        <div class="footer-top">
+          <a class="brand" href="index.html" aria-label="Gym Force, inicio"
+            ><svg class="brand-symbol" viewBox="0 0 36 36" aria-hidden="true">
+              <path d="M12 8h8l-5 8h10L14 29l3-10H8z" /></svg
+            ><span>GYM<span class="brand-accent">FORCE</span></span></a
+          >
+          <p>ENTRENA HOY.<br /><span>SUPÉRATE MAÑANA.</span></p>
+          <a class="back-top" href="#contenido"
+            >Volver arriba
+            <span aria-hidden="true"
+              ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 20V4m-6 6 6-6 6 6" /></svg></span
+          ></a>
+        </div>
+        <div class="footer-middle">
+          <p>
+            Fuerza, actitud y comunidad.<br />Un concepto de gimnasio con mucho
+            por delante.
+          </p>
+          <nav aria-label="Navegación del pie">
+            <a href="instalaciones.html">Instalaciones</a
+            ><a href="clases.html">Clases</a
+            ><a href="entrenadores.html">Entrenadores</a
+            ><a href="tarifas.html">Tarifas</a
+            ><a href="entrenamiento.html">Entrenamiento</a
+            ><a href="contacto.html">Contacto</a>
+          </nav>
+          <div class="footer-disclaimer">
+            <span class="status-dot" aria-hidden="true"></span>
+            <p>
+              Proyecto de portfolio<br /><span
+                >Contenido y servicios ficticios.</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Gym Force · Concepto web</span
+          ><a href="legal.html">Aviso legal y privacidad</a
+          ><span>Diseño y desarrollo web — Álvaro</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

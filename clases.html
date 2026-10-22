@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explora las clases de fuerza, cardio y equilibrio de Gym Force. Filtra por objetivo y consulta horarios de ejemplo y entrenadores ficticios."
+    />
+    <meta name="theme-color" content="#111111" />
+    <title>Clases — GYM FORCE</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      href="fonts/barlow-condensed-800.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Gym Force, inicio"
+          ><svg class="brand-symbol" viewBox="0 0 36 36" aria-hidden="true">
+            <path d="M12 8h8l-5 8h10L14 29l3-10H8z" /></svg
+          ><span>GYM<span class="brand-accent">FORCE</span></span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="navegacion"
+          aria-expanded="false"
+        >
+          <span class="menu-label">Menú</span
+          ><span class="menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="main-nav" id="navegacion" aria-label="Navegación principal">
+          <a href="index.html">Inicio</a
+          ><a href="instalaciones.html">Instalaciones</a
+          ><a href="clases.html" aria-current="page">Clases</a
+          ><a href="entrenadores.html">Entrenadores</a
+          ><a href="tarifas.html">Tarifas</a
+          ><a href="entrenamiento.html">Entrenamiento</a
+          ><a href="contacto.html">Contacto</a
+          ><a class="button button-small nav-cta" href="tarifas.html"
+            >Hazte socio
+            <span aria-hidden="true"
+              ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 19 19 5M5 5h14v14" /></svg></span
+          ></a>
+        </nav>
+      </div>
+    </header>
+    <main id="contenido">
+      <section class="page-intro">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Ruta de navegación">
+            <a href="index.html">Inicio</a><span aria-hidden="true">/</span
+            ><span aria-current="page">Clases</span>
+          </nav>
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span> GYM FORCE /
+            Clases
+          </p>
+          <h1>TU ENERGÍA.<br /><span class="text-yellow">EN EQUIPO.</span></h1>
+          <p class="intro-text">
+            Entrena con ritmo, comparte el esfuerzo y encuentra la clase que te
+            hace volver.
+          </p>
+        </div>
+      </section>
+      <section class="catalog-section" aria-label="Catálogo de clases">
+        <div class="container">
+          <div class="class-banner">
+            <img
+              src="img/studio.webp"
+              alt="Concepto de la sala de entrenamiento colectivo de Gym Force"
+              width="1400"
+              height="605"
+            />
+            <p>
+              SI EL RETO SE COMPARTE,<br /><span
+                >LA ENERGÍA SE MULTIPLICA.</span
+              >
+            </p>
+          </div>
+          <p class="catalog-note">
+            Clases, entrenadores y horarios ficticios. Esta versión no permite
+            reservar ni muestra plazas reales.
+          </p>
+          <div
+            class="filter-bar"
+            role="group"
+            aria-label="Filtrar clases por objetivo"
+          >
+            <button
+              class="filter-button is-active"
+              type="button"
+              data-class-filter="all"
+              aria-pressed="true"
+            >
+              Todas</button
+            ><button
+              class="filter-button"
+              type="button"
+              data-class-filter="strength"
+              aria-pressed="false"
+            >
+              Fuerza</button
+            ><button
+              class="filter-button"
+              type="button"
+              data-class-filter="cardio"
+              aria-pressed="false"
+            >
+              Cardio</button
+            ><button
+              class="filter-button"
+              type="button"
+              data-class-filter="balance"
+              aria-pressed="false"
+            >
+              Equilibrio
+            </button>
+          </div>
+          <p class="sr-only" id="class-status" role="status" aria-live="polite">
+            7 clases disponibles.
+          </p>
+          <div class="class-grid">
+            <article
+              class="class-card class-card-detailed"
+              data-class-category="strength"
+            >
+              <div class="class-card-top">
+                <span class="class-category">FUERZA</span
+                ><span class="class-duration">45 MIN</span>
+              </div>
+              <span class="class-art" aria-hidden="true">01</span>
+              <h2>FUNCTIONAL<br />FORCE</h2>
+              <p>
+                Fuerza útil, movimientos completos y un reto diferente en cada
+                sesión.
+              </p>
+              <dl class="class-schedule">
+                <div>
+                  <dt>Entrenador/a</dt>
+                  <dd>Lucía Torres</dd>
+                </div>
+                <div>
+                  <dt>Horario de ejemplo</dt>
+                  <dd>Lunes y miércoles · 18:00</dd>
+                </div>
+              </dl>
+              <div class="class-meta">
+                <span
+                  ><i class="intensity intensity-medium" aria-hidden="true"></i
+                  >Intensidad media</span
+                ><a
+                  href="contacto.html?clase=Functional%20Force#contacto"
+                  class="class-link"
+                  aria-label="Consultar sobre Functional Force"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></a>
+              </div>
+            </article>
+            <article
+              class="class-card class-card-detailed"
+              data-class-category="cardio"
+            >
+              <div class="class-card-top">
+                <span class="class-category">CARDIO</span
+                ><span class="class-duration">30 MIN</span>
+              </div>
+              <span class="class-art" aria-hidden="true">02</span>
+              <h2>HIIT<br />THE LIMIT</h2>
+              <p>
+                Intervalos cortos. Energía al máximo. Una sesión que se hace
+                sentir.
+              </p>
+              <dl class="class-schedule">
+                <div>
+                  <dt>Entrenador/a</dt>
+                  <dd>Alex Brooks</dd>
+                </div>
+                <div>
+                  <dt>Horario de ejemplo</dt>
+                  <dd>Martes y jueves · 19:00</dd>
+                </div>
+              </dl>
+              <div class="class-meta">
+                <span
+                  ><i class="intensity intensity-high" aria-hidden="true"></i
+                  >Intensidad alta</span
+                ><a
+                  href="contacto.html?clase=HIIT%20The%20Limit#contacto"
+                  class="class-link"
+                  aria-label="Consultar sobre HIIT The Limit"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></a>
+              </div>
+            </article>
+            <article
+              class="class-card class-card-detailed"
+              data-class-category="balance"
+            >
+              <div class="class-card-top">
+                <span class="class-category">EQUILIBRIO</span
+                ><span class="class-duration">50 MIN</span>
+              </div>
+              <span class="class-art" aria-hidden="true">03</span>
+              <h2>YOGA<br />RESET</h2>
+              <p>
+                Baja las revoluciones. Trabaja tu movilidad y vuelve a conectar
+                contigo.
+              </p>
+              <dl class="class-schedule">
+                <div>
+                  <dt>Entrenador/a</dt>
+                  <dd>Lucía Torres</dd>
+                </div>
+                <div>
+                  <dt>Horario de ejemplo</dt>
+                  <dd>Martes y viernes · 09:00</dd>
+                </div>
+              </dl>
+              <div class="class-meta">
+                <span
+                  ><i class="intensity intensity-low" aria-hidden="true"></i
+                  >Intensidad baja</span
+                ><a
+                  href="contacto.html?clase=Yoga%20Reset#contacto"
+                  class="class-link"
+                  aria-label="Consultar sobre Yoga Reset"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></a>
+              </div>
+            </article>
+            <article
+              class="class-card class-card-detailed"
+              data-class-category="cardio"
+            >
+              <div class="class-card-top">
+                <span class="class-category">CARDIO</span
+                ><span class="class-duration">45 MIN</span>
+              </div>
+              <span class="class-art" aria-hidden="true">04</span>
+              <h2>RIDE<br />TOGETHER</h2>
+              <p>
+                Spinning, música y un grupo que te impulsa hasta la última
+                pedalada.
+              </p>
+              <dl class="class-schedule">
+                <div>
+                  <dt>Entrenador/a</dt>
+                  <dd>Alex Brooks</dd>
+                </div>
+                <div>
+                  <dt>Horario de ejemplo</dt>
+                  <dd>Lunes y jueves · 20:00</dd>
+                </div>
+              </dl>
+              <div class="class-meta">
+                <span
+                  ><i class="intensity intensity-high" aria-hidden="true"></i
+                  >Intensidad alta</span
+                ><a
+                  href="contacto.html?clase=Ride%20Together#contacto"
+                  class="class-link"
+                  aria-label="Consultar sobre Ride Together"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></a>
+              </div>
+            </article>
+            <article
+              class="class-card class-card-detailed"
+              data-class-category="strength"
+            >
+              <div class="class-card-top">
+                <span class="class-category">FUERZA</span
+                ><span class="class-duration">50 MIN</span>
+              </div>
+              <span class="class-art" aria-hidden="true">05</span>
+              <h2>BODY<br />POWER</h2>
+              <p>
+                Trabajo con barra al ritmo de la música. Repetición a
+                repetición, más fuerte.
+              </p>
+              <dl class="class-schedule">
+                <div>
+                  <dt>Entrenador/a</dt>
+                  <dd>Diego Martín</dd>
+                </div>
+                <div>
+                  <dt>Horario de ejemplo</dt>
+                  <dd>Lunes y viernes · 19:00</dd>
+                </div>
+              </dl>
+              <div class="class-meta">
+                <span
+                  ><i class="intensity intensity-medium" aria-hidden="true"></i
+                  >Intensidad media</span
+                ><a
+                  href="contacto.html?clase=Body%20Power#contacto"
+                  class="class-link"
+                  aria-label="Consultar sobre Body Power"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></a>
+              </div>
+            </article>
+            <article
+              class="class-card class-card-detailed"
+              data-class-category="cardio"
+            >
+              <div class="class-card-top">
+                <span class="class-category">CARDIO</span
+                ><span class="class-duration">45 MIN</span>
+              </div>
+              <span class="class-art" aria-hidden="true">06</span>
+              <h2>BOXING<br />ENERGY</h2>
+              <p>
+                Coordinación, técnica y cardio en una sesión de boxeo fitness
+                sin contacto.
+              </p>
+              <dl class="class-schedule">
+                <div>
+                  <dt>Entrenador/a</dt>
+                  <dd>Alex Brooks</dd>
+                </div>
+                <div>
+                  <dt>Horario de ejemplo</dt>
+                  <dd>Miércoles · 20:00</dd>
+                </div>
+              </dl>
+              <div class="class-meta">
+                <span
+                  ><i class="intensity intensity-high" aria-hidden="true"></i
+                  >Intensidad alta</span
+                ><a
+                  href="contacto.html?clase=Boxing%20Energy#contacto"
+                  class="class-link"
+                  aria-label="Consultar sobre Boxing Energy"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></a>
+              </div>
+            </article>
+            <article
+              class="class-card class-card-detailed"
+              data-class-category="cardio"
+            >
+              <div class="class-card-top">
+                <span class="class-category">CARDIO</span
+                ><span class="class-duration">45 MIN</span>
+              </div>
+              <span class="class-art" aria-hidden="true">07</span>
+              <h2>DANCE<br />FORCE</h2>
+              <p>
+                Una clase de baile fitness inspirada en zumba para moverte,
+                soltar tensión y disfrutar.
+              </p>
+              <dl class="class-schedule">
+                <div>
+                  <dt>Entrenador/a</dt>
+                  <dd>Lucía Torres</dd>
+                </div>
+                <div>
+                  <dt>Horario de ejemplo</dt>
+                  <dd>Martes y jueves · 18:00</dd>
+                </div>
+              </dl>
+              <div class="class-meta">
+                <span
+                  ><i class="intensity intensity-medium" aria-hidden="true"></i
+                  >Intensidad media</span
+                ><a
+                  href="contacto.html?clase=Dance%20Force#contacto"
+                  class="class-link"
+                  aria-label="Consultar sobre Dance Force"
+                  ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 19 19 5M5 5h14v14" /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="container page-cta">
+        <h2>
+          EL SIGUIENTE PASO<br />ES <span class="text-yellow">TUYO.</span>
+        </h2>
+        <p>Encuentra un plan que encaje contigo.</p>
+        <a class="button" href="tarifas.html"
+          >Ver los planes
+          <span aria-hidden="true"
+            ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 19 19 5M5 5h14v14" /></svg></span
+        ></a>
+      </section>
+    </main>
+    <footer class="site-footer" id="pie">
+      <div class="container">
+        <div class="footer-top">
+          <a class="brand" href="index.html" aria-label="Gym Force, inicio"
+            ><svg class="brand-symbol" viewBox="0 0 36 36" aria-hidden="true">
+              <path d="M12 8h8l-5 8h10L14 29l3-10H8z" /></svg
+            ><span>GYM<span class="brand-accent">FORCE</span></span></a
+          >
+          <p>ENTRENA HOY.<br /><span>SUPÉRATE MAÑANA.</span></p>
+          <a class="back-top" href="#contenido"
+            >Volver arriba
+            <span aria-hidden="true"
+              ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 20V4m-6 6 6-6 6 6" /></svg></span
+          ></a>
+        </div>
+        <div class="footer-middle">
+          <p>
+            Fuerza, actitud y comunidad.<br />Un concepto de gimnasio con mucho
+            por delante.
+          </p>
+          <nav aria-label="Navegación del pie">
+            <a href="instalaciones.html">Instalaciones</a
+            ><a href="clases.html">Clases</a
+            ><a href="entrenadores.html">Entrenadores</a
+            ><a href="tarifas.html">Tarifas</a
+            ><a href="entrenamiento.html">Entrenamiento</a
+            ><a href="contacto.html">Contacto</a>
+          </nav>
+          <div class="footer-disclaimer">
+            <span class="status-dot" aria-hidden="true"></span>
+            <p>
+              Proyecto de portfolio<br /><span
+                >Contenido y servicios ficticios.</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Gym Force · Concepto web</span
+          ><a href="legal.html">Aviso legal y privacidad</a
+          ><span>Diseño y desarrollo web — Álvaro</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
