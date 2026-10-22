@@ -14,7 +14,7 @@ Para desarrollo con un servidor estático, desde la carpeta del proyecto:
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-El proyecto es compatible con alojamiento estático como GitHub Pages desde la raíz. Esta entrega no publica cambios ni configura un dominio. No necesita claves, servicios externos ni una base de datos.
+El proyecto es compatible con alojamiento estático como GitHub Pages desde la raíz. Esta entrega no activa GitHub Pages ni configura un dominio. No necesita claves, servicios externos ni una base de datos.
 
 ## Estructura
 

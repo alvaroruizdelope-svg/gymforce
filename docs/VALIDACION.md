@@ -20,7 +20,7 @@ La política del Chromium administrado bloquea `file://` con `ERR_BLOCKED_BY_ADM
 
 No se han realizado pruebas en dispositivos físicos, Safari o Firefox, ni una auditoría manual completa con tecnologías de asistencia. Las revisiones automáticas no garantizan por sí solas conformidad total de accesibilidad.
 
-La aplicación no se ha publicado en GitHub Pages ni se han enviado commits al remoto en esta entrega. Cuentas, reservas, pagos y backend quedan fuera de esta fase pública.
+La aplicación no se ha publicado en GitHub Pages. Tras completar esta validación, la versión se entregó en la rama `gymforce-vista-previa`, con autorización del usuario y sin modificar `main`. Cuentas, reservas, pagos y backend quedan fuera de esta fase pública.
 
 ## Reproducir
 
