@@ -166,14 +166,24 @@ def main():
             for index, coach in enumerate(["Álvaro", "Sofía", "Deiby"]):
                 page.goto(base + "entrenadores.html")
                 expect(page.locator(".coach-copy h2")).to_have_text(["Álvaro", "Sofía", "Deiby"])
-                expect(page.locator(".photo-placeholder-label:visible")).to_have_count(3)
+                expect(page.locator(".photo-placeholder-label:visible")).to_have_count(2)
                 page.get_by_role("link",name="Consultar entrenamiento").nth(index).click()
                 expect(page.locator("#mensaje")).to_have_value(f"Me gustaría consultar sobre entrenamiento con {coach}.")
             page.goto(base)
             expect(page.locator(".coach-copy h3")).to_have_text(["Álvaro", "Sofía", "Deiby"])
-            expect(page.locator(".photo-placeholder-label:visible")).to_have_count(3)
+            expect(page.locator(".photo-placeholder-label:visible")).to_have_count(2)
             assert page.locator('[data-photo-slot="alex-entrenamiento"]').get_attribute("src") == "img/gym-force-hero.webp"
             expect(page.locator(".space-photo .image-tag")).to_have_text("Imagen conceptual")
+            expect(page.locator('.hero-picture [data-photo-slot="alex-entrenamiento"]')).to_have_count(1)
+            expect(page.locator('.space-photo [data-photo-slot="alex-entrenamiento"]')).to_have_count(0)
+            for target in ['index.html', 'entrenadores.html']:
+                page.goto(base + target)
+                portrait = page.locator('[data-photo-slot="alvaro"]')
+                expect(portrait).to_have_attribute('src', 'img/personas/alvaro.webp')
+                portrait.scroll_into_view_if_needed()
+                portrait.evaluate('image => image.decode()')
+                assert portrait.evaluate('image => image.naturalHeight > image.naturalWidth')
+                assert portrait.locator('..').get_attribute('data-placeholder-panel') is None
             page.goto(base + "contacto.html")
             expect(page.locator(".contact-details")).to_contain_text("Avenida del Sur")
             expect(page.locator(".contact-details")).to_contain_text("Valdepeñas, Ciudad Real, España")

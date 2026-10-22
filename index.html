@@ -64,12 +64,15 @@
     </header>
     <main id="contenido">
       <section class="hero" aria-labelledby="hero-title">
-        <picture class="hero-picture"
+        <picture class="hero-picture" data-photo-placeholder="true"
           ><source
             media="(max-width: 600px)"
-            srcset="img/gym-force-hero-mobile.webp" />
+            srcset="img/gym-force-hero-mobile.webp"
+            data-photo-target="img/personas/alex-entrenamiento-mobile.webp" />
           <img
             src="img/gym-force-hero.webp"
+            data-photo-slot="alex-entrenamiento"
+            data-photo-target="img/personas/alex-entrenamiento.webp"
             width="1672"
             height="941"
             alt="Atleta preparándose para levantar una barra en un gimnasio de estética industrial"
@@ -235,8 +238,6 @@
             <div class="space-photo" data-photo-placeholder="true">
               <img
                 src="img/gym-force-hero.webp"
-                data-photo-slot="alex-entrenamiento"
-                data-photo-target="img/personas/alex-entrenamiento.webp"
                 alt="Concepto visual de la zona de fuerza: barras, discos y estructuras de entrenamiento"
                 width="1672"
                 height="941"
@@ -544,19 +545,16 @@
           </div>
           <div class="coach-grid">
             <article class="coach-card">
-              <div class="coach-photo" data-placeholder-panel="0">
+              <div class="coach-photo" style="--portrait-position: center 24%">
                 <img
-                  src="img/coaches.webp"
+                  src="img/personas/alvaro.webp"
                   data-photo-slot="alvaro"
                   data-photo-target="img/personas/alvaro.webp"
-                  alt="Fotografía provisional de un modelo generado; no representa a Álvaro"
-                  width="1800"
-                  height="720"
+                  alt="Álvaro con sudadera negra y brazos cruzados, con fondo de gimnasio editado"
+                  width="960"
+                  height="1278"
                   loading="lazy"
                 />
-                <span class="photo-placeholder-label"
-                  >Fotografía provisional</span
-                >
               </div>
               <div class="coach-copy">
                 <p class="eyebrow">Fuerza y entrenamiento</p>
@@ -649,9 +647,9 @@
             </article>
           </div>
           <p class="context-note">
-            Especialidades y biografías provisionales de demostración. Las
-            fotografías actuales no representan a Álvaro, Sofía o Deiby; se
-            sustituirán cuando se reciban las imágenes reales.
+            Especialidades y biografías provisionales de demostración. Álvaro ya
+            aparece con su foto y un fondo de gimnasio editado. Las imágenes de
+            Sofía y Deiby siguen siendo provisionales y no las representan.
           </p>
         </div>
       </section>

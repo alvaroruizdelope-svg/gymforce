@@ -37,3 +37,9 @@ El parámetro `--axe` es opcional. El script informa por separado de resultados 
 Se repitieron las 72 combinaciones de página y anchura y las 16 revisiones axe después de preparar Álvaro, Sofía y Deiby. Las pruebas comprueban los tres perfiles en Inicio y Entrenadores, sus tres consultas contextualizadas, las etiquetas provisionales, la foto existente de THE TRAINING FLOOR y la nueva ubicación ficticia en Valdepeñas. Todas esas comprobaciones pasaron. La restricción conocida de `file://` se mantiene y se informa por separado.
 
 No se ha alterado ningún archivo de imagen provisional. La carpeta `img/personas/` documenta los cuatro destinos definitivos, pero las fotos reales aún no se han recibido ni integrado. La sustitución de las cuatro fotografías sigue pendiente.
+
+## Integración parcial de Álvaro
+
+Recibida la fotografía identificada por el usuario como Álvaro, se ha preparado su fondo de gimnasio y se ha integrado la imagen optimizada en las tarjetas de Inicio y Entrenadores. Se comprobaron de nuevo las ocho páginas en nueve anchuras y las 16 revisiones axe, así como la carga del retrato vertical en ambos lugares, las otras dos etiquetas provisionales y las consultas de los tres perfiles. La restricción de `file://` continúa informada por separado.
+
+También se corrigió el destino de Alex conforme a la aclaración del usuario: su foto irá en el hero principal de Inicio y su variante móvil, no en THE TRAINING FLOOR. La foto de esa sección permanece intacta. Sofía, Deiby y Alex siguen pendientes de recepción. No se ha preparado un ZIP definitivo ni se ha publicado la integración parcial.
