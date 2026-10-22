@@ -31,3 +31,9 @@ python3 tests/smoke.py --artifacts /tmp/gymforce-review --axe /ruta/a/axe.min.js
 ```
 
 El parámetro `--axe` es opcional. El script informa por separado de resultados aprobados y de la comprobación de archivos bloqueada por la política del navegador.
+
+## Actualización de perfiles y fotografías pendientes
+
+Se repitieron las 72 combinaciones de página y anchura y las 16 revisiones axe después de preparar Álvaro, Sofía y Deiby. Las pruebas comprueban los tres perfiles en Inicio y Entrenadores, sus tres consultas contextualizadas, las etiquetas provisionales, la foto existente de THE TRAINING FLOOR y la nueva ubicación ficticia en Valdepeñas. Todas esas comprobaciones pasaron. La restricción conocida de `file://` se mantiene y se informa por separado.
+
+No se ha alterado ningún archivo de imagen provisional. La carpeta `img/personas/` documenta los cuatro destinos definitivos, pero las fotos reales aún no se han recibido ni integrado. La sustitución de las cuatro fotografías sigue pendiente.

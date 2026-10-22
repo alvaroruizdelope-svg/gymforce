@@ -82,7 +82,7 @@ if (contactForm) {
     "Boxing Energy",
     "Dance Force",
   ];
-  const allowedCoaches = ["Diego Martín", "Lucía Torres", "Alex Brooks"];
+  const allowedCoaches = ["Álvaro", "Sofía", "Deiby"];
   if (allowedClasses.includes(requestedClass)) {
     interest.value = "clases";
     contactForm.querySelector("#mensaje").value =

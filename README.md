@@ -64,6 +64,12 @@ Esta revisión automática complementa las comprobaciones visuales; no sustituye
 
 ## Contenido de demostración
 
-No existe un gimnasio operativo detrás de esta web. Personas, instalaciones, horarios y ofertas son ficticios. Las fotografías se han generado para el concepto; los esquemas musculares SVG son ilustrativos. Las fuentes se distribuyen con su licencia en `fonts/Barlow-Condensed-LICENSE.txt`.
+No existe un gimnasio operativo detrás de esta web. Las instalaciones, horarios y ofertas son ficticios. Los perfiles se preparan para Álvaro, Sofía y Deiby, con especialidades y biografías provisionales de demostración; las imágenes actuales no los representan. Las fotografías se han generado para el concepto; los esquemas musculares SVG son ilustrativos. Las fuentes se distribuyen con su licencia en `fonts/Barlow-Condensed-LICENSE.txt`.
 
 El formulario no transmite datos, no hay pagos ni altas reales y no se utilizan cookies ni almacenamiento web. El alojamiento puede tener sus propios registros técnicos. Registro, acceso, reservas, área de socio y administración pertenecen a una fase posterior; consulta `docs/EVOLUCION.md`.
+
+## Fotografías personales pendientes
+
+Están preparados los tres perfiles de Álvaro, Sofía y Deiby en Inicio y Entrenadores, sus consultas y sus referencias en Clases. La ubicación ficticia del concepto es Avenida del Sur, Valdepeñas, Ciudad Real, España, sin número de portal ni sede operativa.
+
+Las cuatro fotografías reales —los tres retratos y Alex entrenando en THE TRAINING FLOOR— todavía no se han recibido. Se conservan exactamente los archivos provisionales actuales. Los destinos y el proceso de integración están documentados en `img/personas/README.md`; no hay referencias de carga a imágenes inexistentes. La sustitución de fotografías queda expresamente pendiente.
