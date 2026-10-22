@@ -59,3 +59,9 @@ La revisión específica de Inicio y Entrenadores pasó en cinco anchuras por p�
 ## Entrega de revisión con los tres retratos
 
 El usuario solicitó recibir los archivos actuales antes de enviar la última fotografía. Se entrega esta versión por la rama `gymforce-vista-previa`, con los retratos de Álvaro, Sofía y Deiby integrados y ya comprobados. No se activa GitHub Pages ni se modifica `main`. La imagen provisional del hero y su variante móvil se conservan hasta recibir la foto de Alex. La descarga se comprueba como ZIP completo, incluyendo los tres archivos WebP y sus referencias en las dos páginas.
+
+## Sustitución del retrato de Álvaro
+
+Se reemplaza el primer retrato por la nueva fotografía aportada por el usuario, con el logotipo Gym Force en la sudadera. Se edita su fondo y se actualizan el WebP, las dimensiones y el encuadre en Inicio y Entrenadores. Las imágenes de Sofía, Deiby y la portada provisional no se modifican.
+
+La revisión específica pasó en las dos páginas y cinco anchuras (10 vistas), con cuatro auditorías axe, carga correcta de los tres retratos y ausencia de desbordamientos y excepciones JavaScript. Se entrega un ZIP de revisión actualizado; Alex continúa pendiente para la portada principal.

@@ -22,9 +22,13 @@ Los atributos `data-photo-slot` identifican las posiciones y `data-photo-target`
 
 1. Conservar los originales y los rostros. Editar únicamente los fondos según lo solicitado, sin inventar rasgos físicos ni cambiar ropa, postura o complexión.
 2. Optimizar en WebP y guardar aquí las fotografías reales. Los retratos deben ser verticales y dejar margen sobre la cabeza; la foto de Alex debe permitir un hero horizontal con espacio para el texto a la izquierda.
-3. En ambas tarjetas de cada entrenador, cambiar `src`, dimensiones intrínsecas y texto alternativo. Quitar `data-placeholder-panel` del contenedor y su etiqueta «Fotografía provisional». La imagen real se muestra al 100%, con `object-fit: cover`. Ajustar `--portrait-position` por fotografía cuando haga falta. Álvaro utiliza `center 24%`; Sofía y Deiby, `center top`.
+3. En ambas tarjetas de cada entrenador, cambiar `src`, dimensiones intrínsecas y texto alternativo. Quitar `data-placeholder-panel` del contenedor y su etiqueta «Fotografía provisional». La imagen real se muestra al 100%, con `object-fit: cover`. Ajustar `--portrait-position` por fotografía cuando haga falta. Los tres retratos utilizan `center top`.
 4. Para Alex, actualizar `src` del hero, `srcset` móvil y la precarga correspondiente. Quitar `data-photo-placeholder` de `.hero-picture` cuando la foto real esté integrada. No tocar la imagen ni la etiqueta de THE TRAINING FLOOR.
 5. Actualizar las notas de integración y procedencia de las imágenes. Las biografías y especialidades siguen siendo provisionales hasta confirmación del usuario.
 6. Comprobar rostros, encuadre, proporciones, carga y tarjetas equilibradas en móvil, tablet y escritorio; actualizar las pruebas de las imágenes pendientes.
 
 La integración total continúa pendiente de la fotografía de Alex. Por petición del usuario, se entrega un ZIP de revisión con los tres retratos integrados. La portada conserva su imagen provisional. No es todavía la entrega definitiva con la foto de Alex.
+
+## Nueva fotografía de Álvaro
+
+Se ha sustituido la primera foto por la nueva versión facilitada por el usuario, que incorpora el logotipo Gym Force en la sudadera. Se utiliza esta nueva fotografía como referencia para la edición del fondo y se conserva el mismo destino `alvaro.webp`, actualizado en ambas tarjetas. El encuadre superior se ajusta al nuevo original. Las fotografías de Sofía y Deiby y la portada provisional de Alex se mantienen.
