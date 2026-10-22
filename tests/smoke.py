@@ -166,19 +166,19 @@ def main():
             for index, coach in enumerate(["Álvaro", "Sofía", "Deiby"]):
                 page.goto(base + "entrenadores.html")
                 expect(page.locator(".coach-copy h2")).to_have_text(["Álvaro", "Sofía", "Deiby"])
-                expect(page.locator(".photo-placeholder-label:visible")).to_have_count(1)
+                expect(page.locator(".photo-placeholder-label:visible")).to_have_count(0)
                 page.get_by_role("link",name="Consultar entrenamiento").nth(index).click()
                 expect(page.locator("#mensaje")).to_have_value(f"Me gustaría consultar sobre entrenamiento con {coach}.")
             page.goto(base)
             expect(page.locator(".coach-copy h3")).to_have_text(["Álvaro", "Sofía", "Deiby"])
-            expect(page.locator(".photo-placeholder-label:visible")).to_have_count(1)
+            expect(page.locator(".photo-placeholder-label:visible")).to_have_count(0)
             assert page.locator('[data-photo-slot="alex-entrenamiento"]').get_attribute("src") == "img/gym-force-hero.webp"
             expect(page.locator(".space-photo .image-tag")).to_have_text("Imagen conceptual")
             expect(page.locator('.hero-picture [data-photo-slot="alex-entrenamiento"]')).to_have_count(1)
             expect(page.locator('.space-photo [data-photo-slot="alex-entrenamiento"]')).to_have_count(0)
             for target in ['index.html', 'entrenadores.html']:
                 page.goto(base + target)
-                for slot in ['alvaro','sofia']:
+                for slot in ['alvaro','sofia','deiby']:
                     portrait = page.locator(f'[data-photo-slot="{slot}"]')
                     expect(portrait).to_have_attribute('src', f'img/personas/{slot}.webp')
                     portrait.scroll_into_view_if_needed()

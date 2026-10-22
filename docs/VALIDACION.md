@@ -49,3 +49,9 @@ También se corrigió el destino de Alex conforme a la aclaración del usuario: 
 La fotografía aportada como Sofía se ha editado para sustituir el fondo por un gimnasio y se ha integrado en Inicio y Entrenadores, conservando la camiseta y el logotipo del original como referencia de la edición. Se ha optimizado a WebP y se ha ajustado el encuadre superior para dejar visible la cabeza en las tarjetas.
 
 La revisión específica comprueba ambas páginas a 1440, 1024, 768, 390 y 320 píxeles (10 vistas), los dos retratos reales de Álvaro y Sofía, la única etiqueta provisional de Deiby, las rutas locales y la ausencia de desbordamientos y excepciones JavaScript. Se ejecutan cuatro auditorías axe en las vistas de escritorio y móvil. Quedan pendientes las fotos de Deiby y Alex; todavía no se prepara ni se publica la entrega definitiva.
+
+## Integración parcial de Deiby
+
+El usuario confirmó que la tercera fotografía corresponde a Deiby. Se preparó el fondo de gimnasio y se integró la imagen WebP en sus dos tarjetas, manteniendo el margen superior de la cabeza y retirando la última etiqueta de fotografía provisional del equipo.
+
+La revisión específica de Inicio y Entrenadores pasó en cinco anchuras por página: 10 vistas y cuatro auditorías axe, sin desbordamientos ni excepciones JavaScript. Se verificó la carga de los tres retratos reales, sus proporciones verticales y la ausencia de recortes temporales de tres paneles. La entrega definitiva sigue pendiente únicamente de Alex para el hero de Inicio; no se ha publicado esta integración parcial ni preparado todavía el ZIP definitivo.
