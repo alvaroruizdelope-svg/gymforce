@@ -27,4 +27,4 @@ Los atributos `data-photo-slot` identifican las posiciones y `data-photo-target`
 5. Actualizar las notas de integración y procedencia de las imágenes. Las biografías y especialidades siguen siendo provisionales hasta confirmación del usuario.
 6. Comprobar rostros, encuadre, proporciones, carga y tarjetas equilibradas en móvil, tablet y escritorio; actualizar las pruebas de las imágenes pendientes.
 
-La integración total continúa pendiente de la fotografía de Alex. Todavía no se publica ni se entrega un ZIP definitivo.
+La integración total continúa pendiente de la fotografía de Alex. Por petición del usuario, se entrega un ZIP de revisión con los tres retratos integrados. La portada conserva su imagen provisional. No es todavía la entrega definitiva con la foto de Alex.

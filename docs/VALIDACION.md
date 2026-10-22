@@ -55,3 +55,7 @@ La revisión específica comprueba ambas páginas a 1440, 1024, 768, 390 y 320 p
 El usuario confirmó que la tercera fotografía corresponde a Deiby. Se preparó el fondo de gimnasio y se integró la imagen WebP en sus dos tarjetas, manteniendo el margen superior de la cabeza y retirando la última etiqueta de fotografía provisional del equipo.
 
 La revisión específica de Inicio y Entrenadores pasó en cinco anchuras por página: 10 vistas y cuatro auditorías axe, sin desbordamientos ni excepciones JavaScript. Se verificó la carga de los tres retratos reales, sus proporciones verticales y la ausencia de recortes temporales de tres paneles. La entrega definitiva sigue pendiente únicamente de Alex para el hero de Inicio; no se ha publicado esta integración parcial ni preparado todavía el ZIP definitivo.
+
+## Entrega de revisión con los tres retratos
+
+El usuario solicitó recibir los archivos actuales antes de enviar la última fotografía. Se entrega esta versión por la rama `gymforce-vista-previa`, con los retratos de Álvaro, Sofía y Deiby integrados y ya comprobados. No se activa GitHub Pages ni se modifica `main`. La imagen provisional del hero y su variante móvil se conservan hasta recibir la foto de Alex. La descarga se comprueba como ZIP completo, incluyendo los tres archivos WebP y sus referencias en las dos páginas.
