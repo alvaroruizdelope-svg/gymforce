@@ -65,3 +65,13 @@ El usuario solicitó recibir los archivos actuales antes de enviar la última fo
 Se reemplaza el primer retrato por la nueva fotografía aportada por el usuario, con el logotipo Gym Force en la sudadera. Se edita su fondo y se actualizan el WebP, las dimensiones y el encuadre en Inicio y Entrenadores. Las imágenes de Sofía, Deiby y la portada provisional no se modifican.
 
 La revisión específica pasó en las dos páginas y cinco anchuras (10 vistas), con cuatro auditorías axe, carga correcta de los tres retratos y ausencia de desbordamientos y excepciones JavaScript. Se entrega un ZIP de revisión actualizado; Alex continúa pendiente para la portada principal.
+
+## Fundador separado y nuevo equipo de entrenadores
+
+Por petición del usuario, Álvaro pasa a un bloque destacado de Fundador y Director de Gym Force, situado antes de los entrenadores en Inicio y Entrenadores. Se conserva su última fotografía con sudadera y logotipo. El grid contiene exactamente Sofía, Deiby y Alex; las imágenes y presentaciones de Sofía y Deiby se conservan. Alex utiliza su retrato aportado por el usuario, con fondo de gimnasio editado y optimizado en WebP.
+
+Álvaro se retira de las asociaciones de clases y de la lista de consultas de entrenador. Alex se incorpora a ambos recorridos. Los encabezados de las tarjetas quedan subordinados al título del equipo. Se mantiene el hero y su variante móvil por decisión expresa del usuario; la foto de Alex se usa solo como entrenador. THE TRAINING FLOOR tampoco cambia.
+
+Se completaron las 72 combinaciones de página y anchura, las 16 revisiones axe y los recorridos funcionales. Las comprobaciones verifican el orden fundador/equipo, los tres entrenadores exactos, los cuatro retratos y las nuevas consultas, además de descartar la consulta de Álvaro como entrenador. No hubo excepciones JavaScript. El servidor HTTP temporal registró conexiones de imágenes canceladas al navegar (`BrokenPipeError`), sin afectar las respuestas ni las comprobaciones. La restricción conocida de `file://` continúa informada como BLOCKED, no como aprobada.
+
+Se revisaron visualmente el bloque de fundador y el grid en móvil y escritorio. No se modifica `main` ni se activa GitHub Pages; la entrega se prepara en la rama de revisión habitual.

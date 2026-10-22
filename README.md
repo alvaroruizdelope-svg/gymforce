@@ -64,12 +64,14 @@ Esta revisión automática complementa las comprobaciones visuales; no sustituye
 
 ## Contenido de demostración
 
-No existe un gimnasio operativo detrás de esta web. Las instalaciones, horarios y ofertas son ficticios. Los perfiles se preparan para Álvaro, Sofía y Deiby, con especialidades y biografías provisionales de demostración; las fotografías de Álvaro, Sofía y Deiby son las aportadas por el usuario con fondos editados. Las demás fotografías se han generado para el concepto; los esquemas musculares SVG son ilustrativos. Las fuentes se distribuyen con su licencia en `fonts/Barlow-Condensed-LICENSE.txt`.
+No existe un gimnasio operativo detrás de esta web. Las instalaciones, horarios y ofertas son ficticios. Álvaro se presenta como fundador y director del proyecto; el equipo de entrenadores lo forman Sofía, Deiby y Alex. Los perfiles y especialidades son contenido de demostración; las cuatro fotografías son las aportadas por el usuario con fondos editados. Las demás fotografías se han generado para el concepto; los esquemas musculares SVG son ilustrativos. Las fuentes se distribuyen con su licencia en `fonts/Barlow-Condensed-LICENSE.txt`.
 
 El formulario no transmite datos, no hay pagos ni altas reales y no se utilizan cookies ni almacenamiento web. El alojamiento puede tener sus propios registros técnicos. Registro, acceso, reservas, área de socio y administración pertenecen a una fase posterior; consulta `docs/EVOLUCION.md`.
 
-## Fotografías personales pendientes
+## Fundador, entrenadores y fotografías
 
-Están preparados los tres perfiles de Álvaro, Sofía y Deiby en Inicio y Entrenadores, sus consultas y sus referencias en Clases. La ubicación ficticia del concepto es Avenida del Sur, Valdepeñas, Ciudad Real, España, sin número de portal ni sede operativa.
+Álvaro tiene un bloque destacado como **Fundador y Director de Gym Force**, antes de los entrenadores, en Inicio y Entrenadores. Se utiliza su última fotografía con sudadera negra y logotipo. El grid incluye exactamente **Sofía, Deiby y Alex**, en ese orden, con las imágenes de Sofía y Deiby conservadas y el nuevo retrato de Alex optimizado. Las clases y consultas de entrenador ya no incluyen a Álvaro.
 
-Las fotografías de Álvaro, Sofía y Deiby ya están integradas en Inicio y Entrenadores con sus fondos editados y optimizadas en WebP. Queda por recibir Alex. Según la aclaración del usuario, Alex sustituirá al hombre del hero de la portada principal, no a THE TRAINING FLOOR. Los destinos y el estado están documentados en `img/personas/README.md`. Se entrega una versión de revisión con los tres retratos por petición del usuario; la entrega definitiva con las cuatro fotografías queda pendiente de Alex.
+Las cuatro fotografías están recibidas e integradas. Por decisión expresa del usuario, la portada principal mantiene la imagen actual y la fotografía aportada de Alex se usa solo como entrenador. No se modifica THE TRAINING FLOOR. El estado y los archivos están documentados en `img/personas/README.md`.
+
+La ubicación ficticia sigue siendo Avenida del Sur, Valdepeñas, Ciudad Real, España, sin número de portal ni sede operativa. La web mantiene su estética y funciona como sitio estático sin dependencias de ejecución.

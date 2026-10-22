@@ -1,34 +1,20 @@
-# Fotografías del proyecto: integración parcial
+# Fotografías y funciones del equipo
 
-Las fotos identificadas por el usuario como Álvaro, Sofía y Deiby están recibidas e integradas en Inicio y Entrenadores. Se han sustituido sus fondos por un gimnasio siguiendo las instrucciones de conservar su aspecto, ropa y postura. Los resultados se optimizan en `alvaro.webp`, `sofia.webp` y `deiby.webp`; las salidas de edición PNG se conservan fuera del checkout. Las fotografías originales siguen en la conversación aportadas por el usuario.
+Las cuatro fotos están recibidas e integradas con fondos de gimnasio editados. Las salidas PNG se conservan fuera del checkout y los archivos de la web están optimizados en WebP. Se han usado como referencia las imágenes originales aportadas por el usuario, sin solicitar cambios de rostros, complexión, ropa, joyas ni postura.
 
-Alex sigue pendiente. La imagen anterior del hero se conserva y no se ha generado una persona nueva para sustituirlo. El ZIP definitivo se entregará cuando estén las cuatro fotografías integradas y comprobadas.
+| Archivo       | Uso actual                                                                                                                                  |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `alvaro.webp` | Fundador y Director de Gym Force; bloque destacado anterior a entrenadores en Inicio y Entrenadores. Última foto con sudadera negra y logo. |
+| `sofia.webp`  | Primera tarjeta de entrenadores en ambas páginas; fotografía conservada.                                                                    |
+| `deiby.webp`  | Segunda tarjeta de entrenadores en ambas páginas; fotografía conservada.                                                                    |
+| `alex.webp`   | Tercera tarjeta de entrenadores en ambas páginas; Fuerza funcional y técnica.                                                               |
 
-| Archivo                          | Uso                                         | Estado                                     |
-| -------------------------------- | ------------------------------------------- | ------------------------------------------ |
-| `alvaro.webp`                    | Tarjetas de Álvaro en Inicio y Entrenadores | Recibida, fondo editado e integrada        |
-| `sofia.webp`                     | Tarjetas de Sofía en Inicio y Entrenadores  | Recibida, fondo editado e integrada        |
-| `deiby.webp`                     | Tarjetas de Deiby en Inicio y Entrenadores  | Recibida, fondo editado e integrada        |
-| `alex-entrenamiento.webp`        | Hero de la portada principal de Inicio      | Pendiente; `../gym-force-hero.webp`        |
-| `alex-entrenamiento-mobile.webp` | Variante optimizada del mismo hero en móvil | Pendiente; `../gym-force-hero-mobile.webp` |
+## Decisión sobre la portada
 
-## Corrección de destino de Alex
+La última indicación del usuario sustituye el plan anterior de usar Alex en el hero: **mantener por ahora la portada actual y usar esta foto de Alex solo como entrenador**. Por tanto, `.hero-picture` conserva `../gym-force-hero.webp` y su variante móvil original. THE TRAINING FLOOR tampoco cambia. No hay una foto de portada pendiente que bloquee esta entrega.
 
-El usuario aclaró que Alex sustituirá al hombre del inicio de la página, en `.hero-picture`. No sustituye la foto de la sección THE TRAINING FLOOR. El hero, su variante móvil y su precarga deben actualizarse juntos al recibir la fotografía; THE TRAINING FLOOR y sus etiquetas se conservan.
+## Encuadres
 
-## Incorporación de las siguientes fotos
+Los cuatro archivos son retratos verticales. Los tres entrenadores utilizan el mismo contenedor responsive y `object-fit: cover` con posición superior. Álvaro tiene un bloque independiente de presentación, con proporción 4:5 para dar mayor presencia a su fotografía y mostrar el logotipo de la sudadera.
 
-Los atributos `data-photo-slot` identifican las posiciones y `data-photo-target` indican sus archivos. Estos metadatos no descargan imágenes que aún no existen.
-
-1. Conservar los originales y los rostros. Editar únicamente los fondos según lo solicitado, sin inventar rasgos físicos ni cambiar ropa, postura o complexión.
-2. Optimizar en WebP y guardar aquí las fotografías reales. Los retratos deben ser verticales y dejar margen sobre la cabeza; la foto de Alex debe permitir un hero horizontal con espacio para el texto a la izquierda.
-3. En ambas tarjetas de cada entrenador, cambiar `src`, dimensiones intrínsecas y texto alternativo. Quitar `data-placeholder-panel` del contenedor y su etiqueta «Fotografía provisional». La imagen real se muestra al 100%, con `object-fit: cover`. Ajustar `--portrait-position` por fotografía cuando haga falta. Los tres retratos utilizan `center top`.
-4. Para Alex, actualizar `src` del hero, `srcset` móvil y la precarga correspondiente. Quitar `data-photo-placeholder` de `.hero-picture` cuando la foto real esté integrada. No tocar la imagen ni la etiqueta de THE TRAINING FLOOR.
-5. Actualizar las notas de integración y procedencia de las imágenes. Las biografías y especialidades siguen siendo provisionales hasta confirmación del usuario.
-6. Comprobar rostros, encuadre, proporciones, carga y tarjetas equilibradas en móvil, tablet y escritorio; actualizar las pruebas de las imágenes pendientes.
-
-La integración total continúa pendiente de la fotografía de Alex. Por petición del usuario, se entrega un ZIP de revisión con los tres retratos integrados. La portada conserva su imagen provisional. No es todavía la entrega definitiva con la foto de Alex.
-
-## Nueva fotografía de Álvaro
-
-Se ha sustituido la primera foto por la nueva versión facilitada por el usuario, que incorpora el logotipo Gym Force en la sudadera. Se utiliza esta nueva fotografía como referencia para la edición del fondo y se conserva el mismo destino `alvaro.webp`, actualizado en ambas tarjetas. El encuadre superior se ajusta al nuevo original. Las fotografías de Sofía y Deiby y la portada provisional de Alex se mantienen.
+Se conservan los metadatos `data-photo-slot` y `data-photo-target` para reconocer los archivos en el HTML. Las biografías, especialidades y cargos describen el concepto de gimnasio ficticio y no acreditan titulaciones profesionales. Los nombres, fotos y consultas deben mantenerse coherentes entre Inicio, Entrenadores, Clases y el formulario.

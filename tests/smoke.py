@@ -163,22 +163,27 @@ def main():
             expect(page.locator("#interes")).to_have_value("clases")
             expect(page.locator("#mensaje")).to_have_value("Me gustaría conocer más sobre Yoga Reset.")
             print("PASS: extended class catalogue and enquiry context")
-            for index, coach in enumerate(["Álvaro", "Sofía", "Deiby"]):
+            for index, coach in enumerate(["Sofía", "Deiby", "Alex"]):
                 page.goto(base + "entrenadores.html")
-                expect(page.locator(".coach-copy h2")).to_have_text(["Álvaro", "Sofía", "Deiby"])
+                expect(page.locator(".coach-copy h3")).to_have_text(["Sofía", "Deiby", "Alex"])
                 expect(page.locator(".photo-placeholder-label:visible")).to_have_count(0)
                 page.get_by_role("link",name="Consultar entrenamiento").nth(index).click()
                 expect(page.locator("#mensaje")).to_have_value(f"Me gustaría consultar sobre entrenamiento con {coach}.")
             page.goto(base)
-            expect(page.locator(".coach-copy h3")).to_have_text(["Álvaro", "Sofía", "Deiby"])
+            expect(page.locator(".coach-copy h3")).to_have_text(["Sofía", "Deiby", "Alex"])
             expect(page.locator(".photo-placeholder-label:visible")).to_have_count(0)
-            assert page.locator('[data-photo-slot="alex-entrenamiento"]').get_attribute("src") == "img/gym-force-hero.webp"
+            assert page.locator('.hero-picture img').get_attribute("src") == "img/gym-force-hero.webp"
             expect(page.locator(".space-photo .image-tag")).to_have_text("Imagen conceptual")
-            expect(page.locator('.hero-picture [data-photo-slot="alex-entrenamiento"]')).to_have_count(1)
+            expect(page.locator('.hero-picture [data-photo-slot="alex"]')).to_have_count(0)
             expect(page.locator('.space-photo [data-photo-slot="alex-entrenamiento"]')).to_have_count(0)
             for target in ['index.html', 'entrenadores.html']:
                 page.goto(base + target)
-                for slot in ['alvaro','sofia','deiby']:
+                expect(page.locator('.founder-section')).to_have_count(1)
+                expect(page.locator('.founder-role')).to_have_text('Fundador y Director de Gym Force')
+                expect(page.locator('.coach-grid [data-photo-slot="alvaro"]')).to_have_count(0)
+                expect(page.locator('.coach-grid .coach-card')).to_have_count(3)
+                assert page.locator('.founder-section').evaluate('el => !!(el.compareDocumentPosition(document.querySelector(".coach-grid")) & Node.DOCUMENT_POSITION_FOLLOWING)')
+                for slot in ['alvaro','sofia','deiby','alex']:
                     portrait = page.locator(f'[data-photo-slot="{slot}"]')
                     expect(portrait).to_have_attribute('src', f'img/personas/{slot}.webp')
                     portrait.scroll_into_view_if_needed()
@@ -189,7 +194,11 @@ def main():
             expect(page.locator(".contact-details")).to_contain_text("Avenida del Sur")
             expect(page.locator(".contact-details")).to_contain_text("Valdepeñas, Ciudad Real, España")
             assert "Madrid" not in page.locator(".contact-details").inner_text()
-            print("PASS: all three coach enquiries, both profile sections, unchanged provisional floor photo and fictional location")
+            page.goto(base + "contacto.html?entrenador=%C3%81lvaro#contacto")
+            expect(page.locator('#mensaje')).to_have_value('')
+            page.goto(base + 'clases.html')
+            assert not page.locator('.class-schedule dd').filter(has_text='Álvaro').count()
+            print("PASS: founder before three trainers, four portraits, new enquiries, founder excluded from classes, unchanged hero and fictional location")
             page.goto(base + "entrenamiento.html")
             expect(page.locator(".exercise-card:visible")).to_have_count(14)
             for group in ["pecho","espalda","piernas","hombros","biceps","triceps","core"]:
