@@ -66,10 +66,12 @@ def main():
     static_checks()
     executable = shutil.which("chromium") or shutil.which("google-chrome")
     assert executable, "Install Chromium or Google Chrome for browser checks"
-    server = ThreadingHTTPServer(("127.0.0.1", 0), partial(QuietHandler, directory=str(ROOT)))
+    # Serve under /gymforce/ too, as on the project's GitHub Pages URL.
+    server = ThreadingHTTPServer(("127.0.0.1", 0), partial(QuietHandler, directory=str(ROOT.parent)))
     Thread(target=server.serve_forever, daemon=True).start()
-    base = f"http://127.0.0.1:{server.server_port}/"
+    base = f"http://127.0.0.1:{server.server_port}/{ROOT.name}/"
     errors = []
+    requested_urls = []
     try:
         with sync_playwright() as playwright:
             browser = playwright.chromium.launch(executable_path=executable, args=["--no-sandbox"])
@@ -77,6 +79,7 @@ def main():
                 context = browser.new_context(viewport={"width":width,"height":height}, reduced_motion="reduce")
                 page = context.new_page()
                 page.on("pageerror", lambda error: errors.append(str(error)))
+                page.on("request", lambda request: requested_urls.append(request.url))
                 for target in PAGES:
                     response = page.goto(base + target)
                     assert response.status == 200
@@ -94,6 +97,11 @@ def main():
                     assert metrics["scroll"] == width, (width,target,metrics)
                     assert not metrics["overflow"], (width,target,metrics)
                     expect(page.locator("h1")).to_have_count(1)
+                    expect(page.locator(".footer-legal a")).to_have_text([
+                        "Aviso legal", "Privacidad", "Cookies", "Condiciones de uso"
+                    ])
+                    for anchor, section in zip(page.locator(".footer-legal a").all(), ["aviso-legal", "privacidad", "cookies", "condiciones"]):
+                        expect(anchor).to_have_attribute("href", f"legal.html#{section}")
                     if args.axe and width in [1440,390]:
                         page.add_script_tag(path=str(args.axe.resolve()))
                         result = page.evaluate("""async () => await axe.run(document, {runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}})""")
@@ -219,6 +227,47 @@ def main():
             expect(page.locator(".exercise-card details").first).to_have_attribute("open", "")
             print("PASS: 7 muscle filters, accent-insensitive search, combined filters, empty/reset state and technique")
             page.close()
+
+            # Verify both forms from a fresh context, including typing and validation.
+            context = browser.new_context(viewport={"width":390,"height":844}, reduced_motion="reduce")
+            page = context.new_page()
+            page.on("pageerror", lambda error: errors.append(str(error)))
+            for target in ["index.html", "contacto.html"]:
+                page.goto(base + target)
+                for image in page.locator("img").all():
+                    image.scroll_into_view_if_needed()
+                    image.evaluate("image => image.decode()")
+                page.wait_for_load_state("networkidle")
+                form_requests = []
+                def record_request(request):
+                    form_requests.append(request.url)
+                page.on("request", record_request)
+                expect(page.locator("#contact-form [name]")).to_have_count(0)
+                page.locator("#nombre").fill("Prueba ficticia legal")
+                page.locator("#correo").fill("prueba@example.com")
+                page.locator("#mensaje").fill("Mensaje ficticio de revisión")
+                page.get_by_role("button", name="Probar formulario").click()
+                expect(page.locator("#form-feedback")).to_contain_text("No se ha enviado")
+                page.wait_for_timeout(200)
+                assert not form_requests, (target, form_requests)
+                page.remove_listener("request", record_request)
+                assert page.url == base + target
+                assert not context.cookies()
+                assert page.evaluate("localStorage.length === 0 && sessionStorage.length === 0")
+                assert page.evaluate("async () => (await indexedDB.databases()).length === 0")
+                assert page.evaluate("async () => (await navigator.serviceWorker.getRegistrations()).length === 0")
+            print("PASS: both demo forms send no requests during input/submission, retain no application storage and do not put field contents in URLs")
+            page.goto(base + "legal.html")
+            expect(page.locator(".legal-section")).to_have_count(4)
+            for section in ["aviso-legal", "privacidad", "cookies", "condiciones"]:
+                page.locator(f'.legal-toc a[href="#{section}"]').click()
+                expect(page).to_have_url(base + "legal.html#" + section)
+                heading = page.locator(f"#{section} h2")
+                expect(heading).to_be_in_viewport()
+                assert heading.bounding_box()["y"] >= page.locator(".site-header").bounding_box()["height"]
+            assert all(url.startswith(base) for url in requested_urls), requested_urls
+            print("PASS: four legal anchors work on mobile below the header; no third-party resource requests on the eight pages")
+            context.close()
 
             context = browser.new_context(java_script_enabled=False,viewport={"width":390,"height":844})
             page = context.new_page()

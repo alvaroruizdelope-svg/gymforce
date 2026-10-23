@@ -1071,6 +1071,8 @@ p + p {
 }
 .footer-bottom {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
   gap: 25px;
   padding-block: 20px;
@@ -1080,6 +1082,20 @@ p + p {
 }
 .footer-bottom a:hover {
   color: var(--yellow);
+}
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-size: 12px;
+}
+.footer-legal a {
+  padding-block: 5px;
+}
+.form-notice a {
+  color: var(--yellow);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* Tariffs and legal pages. */
@@ -1303,6 +1319,43 @@ p + p {
   color: var(--yellow);
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+.legal-content .legal-updated {
+  margin-top: 14px;
+  font-size: 12px;
+}
+.legal-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block: 28px 36px;
+}
+.legal-toc a {
+  padding: 10px 15px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-size: 13px;
+  text-decoration: none;
+}
+.legal-toc a:hover {
+  background: #f5d00012;
+  border-color: var(--yellow);
+}
+.legal-section {
+  padding-block: 30px;
+  border-top: 1px solid var(--line);
+}
+.legal-section h2 {
+  margin-top: 0;
+  color: var(--yellow);
+}
+.legal-section h3 {
+  margin-block: 24px 12px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.legal-content .legal-return {
+  margin-top: 12px;
 }
 
 @media (min-width: 1700px) {

@@ -14,7 +14,7 @@ Para desarrollo con un servidor estático, desde la carpeta del proyecto:
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-El proyecto es compatible con alojamiento estático como GitHub Pages desde la raíz. Esta entrega no activa GitHub Pages ni configura un dominio. No necesita claves, servicios externos ni una base de datos.
+El proyecto está publicado en https://alvaroruizdelope-svg.github.io/gymforce/ mediante GitHub Pages. La revisión legal del 23 de octubre de 2026 se entrega en la rama `gymforce-vista-previa` para revisión y no se despliega automáticamente. No necesita claves, servicios externos de aplicación ni una base de datos.
 
 ## Estructura
 
@@ -25,7 +25,7 @@ El proyecto es compatible con alojamiento estático como GitHub Pages desde la r
 - `tarifas.html`: mensual, trimestral y anual; selección de plan y preguntas frecuentes.
 - `entrenamiento.html`: 14 ejercicios de siete grupos musculares, búsqueda y técnica básica.
 - `contacto.html`: formulario y datos de ejemplo, sin dirección o contactos operativos.
-- `legal.html`: carácter demostrativo, privacidad y procedencia de recursos.
+- `legal.html`: aviso legal, privacidad, cookies y condiciones de uso, con navegación interna y enlaces desde todos los pies de página.
 - `css/estilos.css`: diseño compartido, componentes y adaptación responsive.
 - `js/main.js`: menú, filtros, búsqueda, contexto de consultas y formulario demostrativo.
 - `img/`: fotografías conceptuales optimizadas en WebP y favicon SVG.
